@@ -1,0 +1,1 @@
+$('#listado-datos').load('../componentes/envio/listado.php');
