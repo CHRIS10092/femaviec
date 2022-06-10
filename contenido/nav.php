@@ -205,7 +205,7 @@
 
 						<ul class="submenu">
 							<li class="">
-								<a href="../vistas/envios.php">
+								<a href="../vistas/pasoagua.php">
 
 									<i class="fa fa-home text-danger"></i>
 									Paso de agua
@@ -357,7 +357,7 @@
 
 						<ul class="submenu">
 							<li class="">
-								<a href="../vistas/envios.php">
+								<a href="../vistas/pasoagua.php">
 
 									<i class="fa fa-home text-danger"></i>
 									Paso de agua

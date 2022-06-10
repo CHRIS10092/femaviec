@@ -69,9 +69,10 @@ function registrar(){
 function capturar(datos){
   d=datos.split('||');
   $('#txt-id').val(d[0]);
-  $('#txtMaxu').val(d[1]);
-  $('#txtMinu').val(d[2]);
-  $('#txtHumu').val(d[3]);
+  $('#cmb-galponu').val(d[1]);
+  $('#txtMaxu').val(d[2]);
+  $('#txtMinu').val(d[3]);
+  $('#txtHumu').val(d[4]);
   
 }
 

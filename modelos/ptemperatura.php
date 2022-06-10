@@ -10,7 +10,17 @@ class ptemperatura extends conexion
     }
 
 
+public function listar_g()
+    {
 
+        
+        $maqv_sql = 'SELECT * FROM parametrostemperatura';
+        $maqv_stmt = $this->maqv_dbh->prepare($maqv_sql);        
+        $maqv_stmt->execute();
+        $rs = $maqv_stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $rs;
+        
+    }
 public function ListarGalpon()
     {
         $maqv_sql = "SELECT * FROM galpones";

@@ -34,9 +34,10 @@ if(isset($_POST['usuario'])) {
 /*
 
  */
+//$con=$_POST['cont']+1;
 if(isset($_POST['usuario'])){
 echo $maqv_obj->Verificar($maqv_datos);	
-echo $maqv_obj->Intentos($maqv_datos);
+echo $maqv_obj->Intentos($maqv_datos);	
 }else{
 //print_r($maqv_datos);
 

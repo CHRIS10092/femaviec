@@ -9,7 +9,7 @@ $("#btn-entrar").click(function () {
 	}else if(!clave.val()){
 		avisos('clave campo vacio',clave);
 	}else{
-		//acceder(usuario.val(),clave.val());
+	
 		acceder(usuario.val(),clave.val());
 	}
 	
@@ -43,8 +43,11 @@ function acceder(usuario,clave){
 		url:'controladores/login/acceso.php',
 		data:{usuario:usuario,clave:clave},
 		success:function(r){
-			if(r==11){
-				toastr.info('Acceso Incorrecto');
+			
+			let cont=document.getElementById('cont').value;
+			if(r==1){
+				toastr.info('Acceso Incorrecto'+cont++);
+				cont++;
 			}else if(r==21){
 				$("#loading").css("display","none");
 				$(".login-box-body").fadeOut(500,function(){

@@ -8,9 +8,7 @@ if (isset($_SESSION['usuarios'])) { ?>
 
 <div class="box box-danger">
     <div class="box-header with-border">
-        <h4 class="box-title"><i class="fa fa-home"></i> Historial de Encendido de Ventiladores </h4><br>
-        <span style="color:green;"><icon class="fa fa-power-off">1=Encendido</icon> </span><br>
-        <span style="color:red;"><icon class="fa fa-power-off">2=Apagado</icon></span><br>
+    <h1 class="box-title"><i class="fa fa-home"></i> Control de Paso de Agua </h1><br>
     </div>
     <!-- /.box-header -->
     <div class="box-body">
@@ -33,7 +31,28 @@ if (isset($_SESSION['usuarios'])) { ?>
             </div>
 
         </div>
-        <div id="listado-articulos"></div>
+
+
+        <br>
+        <br>
+        <br>
+        <div class="panel panel-info">
+      <div class="panel-heading">
+      
+        
+        <i class="fa fa-circle" aria-hidden="true">Lleno</i>
+
+      </div> 
+      <div class="panel-body">
+
+      <i class="fa fa-dot-circle-o" aria-hidden="true">Con Agua</i>
+
+      </div>
+      <div class="panel-footer">
+      <i class="fa fa-circle-o" aria-hidden="true">Vacio</i>
+      </div>
+    </div>
+        <div  id="listado-articulos"></div>
 
       
     </div>
@@ -47,7 +66,7 @@ if (isset($_SESSION['usuarios'])) { ?>
     <!-- /.box-body -->
 </div>
 <?php require_once '../contenido/foot.php' ?>
-<script src="../helpers/vergalpones.js"></script>
+<script src="../helpers/pasoagua.js"></script>
 <?php } else {
     header("location: ../");
 }

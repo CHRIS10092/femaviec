@@ -30,7 +30,7 @@ if (isset($_SESSION['usuarios'])) {
 $hora = date_default_timezone_set('America/Lima');
 $fecha = date('y-m-d');
 if (!empty($_GET)) {
-    if (isset($_GET["idg"]) && isset($_GET["t"]) && isset($_GET["hg"]) && isset($_GET['tmax']) && isset($_GET['tmin']) && isset($_GET["b1"]) && isset($_GET["b2"]) && isset($_GET["b3"]) && isset($_GET["b4"]) && isset($_GET["bo1"]) && isset($_GET["bo2"]) && isset($_GET["bo3"]) && isset($_GET["bo4"]) && isset($_GET["v"])) {
+    if (isset($_GET["idg"]) && isset($_GET["t"]) && isset($_GET["hg"]) && isset($_GET["b1"]) && isset($_GET["b2"]) && isset($_GET["b3"]) && isset($_GET["b4"]) && isset($_GET["bo1"]) && isset($_GET["bo2"]) && isset($_GET["bo3"]) && isset($_GET["bo4"]) && isset($_GET["v"])) {
 
         if ($_GET["idg"] != "" && $_GET["t"] != "" && $_GET["hg"] != "" && $_GET["b1"] != "" && $_GET["bo1"] != "" && $_GET["b2"] != "" && $_GET["bo2"] != "" && $_GET["b3"] != "" && $_GET["bo3"] != "" && $_GET["b4"] != "" && $_GET["bo4"] != "" && $_GET["v"] != "") {
 
@@ -38,10 +38,7 @@ if (!empty($_GET)) {
             $idgalpon = $_GET['idg'];
             $temperatura = $_GET['t'];
             $humedadgalpon = $_GET['hg'];
-            //temperaturamax
-            $tmax=$_GET['tmax'];
-            //tmin
-            $tmin=$_GET['tmin'];
+            
             $bebedero1 = $_GET['b1'];
             $bebedero2 = $_GET['b2'];
             $bebedero3 = $_GET['b3'];
@@ -60,7 +57,7 @@ if (!empty($_GET)) {
             $db = "femaviee";
             $con = mysqli_connect($host, $user, $password, $db);
 
-            $sql = "INSERT INTO `registros`(`fecha`, `idgalpon`, `temperatura`, `humedadgalpon`, `tmax`, `tmin`, `bebedero1`,`bebedero2`,`bebedero3`,`bebedero4`, `bomba1`,`bomba2`,`bomba3`,`bomba4`, `ventilador`) VALUES ('$fecha','$idgalpon','$temperatura','$humedadgalpon','$tmax','$tmin','$bebedero1','$bebedero2','$bebedero3','$bebedero4','$bomba1','$bomba2','$bomba3','$bomba4','$ventilador')";
+            $sql = "INSERT INTO `registros`(`fecha`, `idgalpon`, `temperatura`, `humedadgalpon`, `bebedero1`,`bebedero2`,`bebedero3`,`bebedero4`, `bomba1`,`bomba2`,`bomba3`,`bomba4`, `ventilador`) VALUES ('$fecha','$idgalpon','$temperatura','$humedadgalpon','$bebedero1','$bebedero2','$bebedero3','$bebedero4','$bomba1','$bomba2','$bomba3','$bomba4','$ventilador')";
 
             $query = $con->query($sql);
             if ($query != null) {

@@ -164,7 +164,7 @@ $obj = new reportes();
 }
 </style>
 
-<h1>sddsds</h1>
+<!--<h1>sddsds</h1>
 <tr>
     <td>
     <label>
@@ -183,7 +183,7 @@ $obj = new reportes();
   </td>
 </tr>
 
-
+-->
 <script type="text/javascript">
     
     function multi(){

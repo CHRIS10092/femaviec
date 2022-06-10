@@ -17,7 +17,7 @@ if($_POST['max']<$_POST['min']){
   echo 3;
 }else{
 
-//echo $obj->Registrar($datos);
-echo 1;
+echo $obj->Registrar($datos);
+//echo 1;
 }
 //print_r($datos);
