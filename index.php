@@ -25,7 +25,7 @@
 <body class="hold-transition login-page">
     <div id="loading">
         <img src="img/spinner.gif" width="20%"><br>
-        <span class="load-palabra">Bienvenido Espere...</span>
+        <span class="load-palabra">Bienvenidoss Espere...</span>
     </div>
     <div class="login-box">
         <div class="login-logo">
