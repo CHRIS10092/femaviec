@@ -4,6 +4,7 @@ $obj = new  galpones();
 $datos = $obj->listar_datospollos($_GET["galpon"], $_GET['lote']);
 ?>
 <br>
+
 <table class="table table-striped">
     <thead>
         <tr>
@@ -12,7 +13,7 @@ $datos = $obj->listar_datospollos($_GET["galpon"], $_GET['lote']);
             <th>Lote</th>
             <th>temperatuta Min</th>
             <th>temperatura Max</th>
-            <th>temperatura Min</th>
+            <th>Humedad </th>
             
         </tr>
     </thead>
@@ -20,12 +21,12 @@ $datos = $obj->listar_datospollos($_GET["galpon"], $_GET['lote']);
         <?php foreach ($datos as $dato) : ?>
 
         <tr>
-            <td><?php echo  $dato["codigo"] ?> </td>
-            <td> <input type="text" value="<?php echo  $dato["numero"] ?>" name="numero" id="txt-numero" > </td>
-            <td><input type="text" value="<?php echo  $dato["lote"] ?>" name="lote" id="txt-lote" > </td>
-            <td><input type="text" value="<?php echo  $dato["maximotem"] ?>" name="maximotem" id="txt-maximotemp" > </td>
-            <td><input type="text" value="<?php echo  $dato["minimotem"] ?>" name="minimotem" id="txt-minimotemp" > </td>
-            <td><input type="text" value="<?php echo  $dato["maximohum"] ?>" name="maximohum" id="txt-maximohum" ></td>
+            <td bgcolor="#00aaf3"> <?php echo  $dato["codigo"] ?> </td>
+            <td> <?php echo  $dato["numero"] ?> </td>
+            <td> <?php echo  $dato["lote"] ?> </td>
+            <td> <?php echo  $dato["maximotem"] ?>  </td>
+            <td> <?php echo  $dato["minimotem"] ?>  </td>
+            <td> <?php echo  $dato["maximohum"] ?> </td>
             
         </tr>
         <?php endforeach; ?>
@@ -70,7 +71,7 @@ require_once "../../modelos/galpones.php";
 $obj = new  galpones();
 $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
 ?>
-<center><button class="form control btn btn-success col-md-2" id="apagar">encender</button>
+<!--<center><button class="form control btn btn-success col-md-2" id="apagar">encender</button>
 <button class="form control  btn btn-danger col-md-2" onclick="Verdatos();" id="encender">Apagar</button></center>
 
 
@@ -86,6 +87,7 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
         alert("el galpom  es"+de+"el lote  es"+de+"el max  es"+max+"el min  es"+min+"el hum  es"+hum+"encedido"+encendido);
     }
 </script>
+-->
 
 <table class="table table-striped">
     <thead>

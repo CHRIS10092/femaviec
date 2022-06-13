@@ -34,12 +34,11 @@ class galpones extends conexion
     }
     public function listar_datospollos($idgalpon, $idlote)
     {
-        $maqv_sql = "SELECT g.*,dt.*,ht.*,pt.*,r.* FROM galpones g, datospollos dt, herramientastemperatura ht, parametrostemperatura pt,registros r
-        where g.numero=dt.galpon
-        AND g.numero=?
-        AND dt.lote=?
-        AND g.numero=pt.galpon
-        ORDER BY r.fecha DESC
+        $maqv_sql = "SELECT g.*,pt.* FROM galpones g,  parametrostemperatura pt
+        where g.numero=pt.galpon
+        AND g.numero=23
+        AND g.lote=2
+        GROUP BY g.numero
         LIMIT 1";
         $stmt = $this->maqv_dbh->prepare($maqv_sql);
         $stmt->bindParam(1, $idgalpon);

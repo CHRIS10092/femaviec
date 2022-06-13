@@ -55,6 +55,15 @@
 
 								<b class="arrow"></b>
 							</li>
+							<li class="">
+								<a href="../vistas/index.php">
+
+									<i class="fa fa-building-o text-blue"></i>
+									Respaldo BBDD
+								</a>
+
+								<b class="arrow"></b>
+							</li>
 						</ul>
 
 					</li>
@@ -63,7 +72,7 @@
 	               
 				
 					<li class="">
-						<a href="cliente.php" class="dropdown-toggle">
+						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-wrench yellow"></i>
 							<span class="menu-text">Producción</span>
 
@@ -223,7 +232,7 @@
 						               
 				
 					<li class="">
-						<a href="cliente.php" class="dropdown-toggle">
+						<a href="#" class="dropdown-toggle">
 							<i class="menu-icon fa fa-wrench yellow"></i>
 							<span class="menu-text">Producción</span>
 

@@ -187,7 +187,7 @@ class usuarios extends conexion
 	{
 		try {
 
-			$maqv_sql = "UPDATE maqv_tblusuario SET clave=? WHERE id=?";
+			$maqv_sql = "UPDATE maqv_tblusuario SET clave=? WHERE id=? And estado='Act'";
 			$maqv_stmt = $this->maqv_dbh->prepare($maqv_sql);
 			$maqv_stmt->bindParam(1, $maqv_clave);
 			$maqv_stmt->bindParam(2, $maqv_idusuario);
@@ -307,7 +307,7 @@ class usuarios extends conexion
 			$mail->Username   = 'alexsalguero1999.al@gmail.com';                     // SMTP username
 			$mail->Password   = 'ifkfebxclknnesiv';                               // SMTP password
 			$mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
-			$mail->Port       = 587;                                    // TCP port to connect to
+			$mail->Port       = 465;                                    // TCP port to connect to
 
 			//Recipients
 			$mail->setFrom('koriche001@gmail.com', 'Web ');

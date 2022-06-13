@@ -11,14 +11,28 @@ class login extends conexion{
 
 
     public function Verificar($maqv_datos){
-		if(self::VerificarAcceso($maqv_datos)>0){
+	
+		$_SESSION["intentos"] = isset($_SESSION["intentos"]) ? $_SESSION["intentos"] : 1;
 
-			//echo self::ingresarIntentos($maqv_datos);
-			echo self::Acceder($maqv_datos);
+		if(self::VerificarAcceso($maqv_datos)>0){
+			$_SESSION["intentos"] = 1;
+		echo self::Acceder($maqv_datos);
 		}else{
-			echo 1;
+			
+    echo $_SESSION["intentos"]++; // aumentamos en 1 los intentos
+	
+    
+			}
+			
+if($_SESSION["intentos"] >3){
+  // actualizamos el campo mostrar para que no se puede iniciar session
+   echo self::Ir($maqv_datos) ;
+   
 		}
-    }
+		
+// mysqli_close($conexion) // Cerrar la conexion para que no consuma recurso.
+    
+}
 
 	public function VerificarAcceso($maqv_datos){
 
@@ -36,7 +50,7 @@ class login extends conexion{
 		$maqv_stmt=$this->maqv_dbh->prepare($sql);
 		$maqv_stmt->bindParam(1,$maqv_datos[0]);
 
-	    //echo $sql;
+	    echo 7;
 	    $maqv_stmt->execute();
 	    $maqv_datos=$maqv_stmt->rowCount();
 	    return $maqv_datos;
@@ -46,13 +60,14 @@ class login extends conexion{
 	public function Ir($maqv_datos){
 		
 		try{
-			$sql="UPDATE maqv_tblusuario SET estado='Ina' WHERE usuario=?";
+			$sql="UPDATE maqv_tblusuario SET estado='Ina' WHERE usuario=? ";
 		$maqv_stmt=$this->maqv_dbh->prepare($sql);
-		$maqv_stmt->bindParam(1,$maqv_datos);
+		$maqv_stmt->bindParam(1,$maqv_datos[0]);
+		
 
 	    
 	    $maqv_stmt->execute();
-	    echo 3 ;
+	    //echo  ;
 	    }catch(Exception $e){
 	echo $e->getMessage();
 		}
@@ -67,7 +82,7 @@ public function ingresarIntentos($maqv_datos){
 		$stmt=$this->maqv_dbh->prepare($sql);
 		$stmt->bindParam(1,$maqv_datos[0]);
 		$stmt->execute();
-		echo 1;
+		echo 5;
 	}catch(Exception $e){
 	echo $e->getMessage();
 }
@@ -93,7 +108,7 @@ public function ingresarIntentos($maqv_datos){
 	    	];
 	    }
 
-	    echo 2;
+	    echo 11;
 	    
     }
 

@@ -10,27 +10,28 @@ if (isset($_SESSION['usuarios'])) { ?>
 
 <?php
 
-$db_host='localhost';
-$db_name='femaviee';
-$db_user='root';
-$db_pass='';
+ $host = "localhost";
+            $user = "root";
+            $password = "";
+            $db = "femaviee";
 
 $fecha= date('Ymd-His');
-$salida_sql=$db_name.'_'.$fecha.'.sql';
+$salida_sql=$db.'_'.$fecha.'.sql';
 
-$dump = "mysqldump -u root -p'' femaviee > sq.sql";
-	system($dump,$output); //Ejecutamos el comando para respaldo
+$dump = "mysqldump -u root -p'' femaviee > $salida_sql";
+	exec($dump); //Ejecutamos el comando para respaldo
 	
 /*$zip = new ZipArchive(); //Objeto de Libreria ZipArchive
 	
 	//Construimos el nombre del archivo ZIP Ejemplo: mibase_20160101-081120.zip
-	$salida_zip = $db_name.'_'.$fecha.'.zip';
+	$salida_zip = $db.'_'.$fecha.'.zip';
 	
 	if($zip->open($salida_zip,ZIPARCHIVE::CREATE)===true) { //Creamos y abrimos el archivo ZIP
 		$zip->addFile($salida_sql); //Agregamos el archivo SQL a ZIP
 		$zip->close(); //Cerramos el ZIP
 		unlink($salida_sql); //Eliminamos el archivo temporal SQL
-		//header ("Location: $salida_zip"); // Redireccionamos para descargar el Arcivo ZIP
+		//echo "el respaldo se guardo exitoxamente en la carpeta femaviec/vistas/db1(fecha).sql";
+		header ("Location: $salida_zip"); // Redireccionamos para descargar el Arcivo ZIP
 		} else {
 		echo 'Error'; //Enviamos el mensaje de error
 	}

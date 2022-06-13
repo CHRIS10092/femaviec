@@ -44,21 +44,25 @@ function acceder(usuario,clave){
 		data:{usuario:usuario,clave:clave},
 		success:function(r){
 			
-			let cont=document.getElementById('cont').value;
+		
 			if(r==1){
-				toastr.info('Acceso Incorrecto'+cont++);
-				cont++;
-			}else if(r==21){
+				toastr.info('Primer Intento Acceso Incorrecto');
+				
+			}else if(r==2){
+
+				toastr.info('Segundo Intento Acceso Incorrecto');
+			}else if(r>=3 && r!=11){
+
+		toastr.info('Contactarse con el Administrador Usuario Bloqueado');		
+			}else if(r==11){
 				$("#loading").css("display","none");
 				$(".login-box-body").fadeOut(500,function(){
 				})
 				$("#loading").fadeIn(2000,function(){
 					accediendo();
 				});
-			}else if(r==31){
-
-		toastr.info('Contactarse con el Administrador Usuario Bloqueado'+usuario);		
 			}
+			
 			console.log(r)
 		}
 

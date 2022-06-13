@@ -44,7 +44,7 @@
                     <input type="password" class="form-control" placeholder="Password" id="txt-clave" name="clave">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                     
-                    <input type="text" class="form-control" id="cont" name="cont" value="0">
+                  
                 </div>
                 <div class="row">
                     <!-- /.col -->
