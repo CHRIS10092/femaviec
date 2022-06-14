@@ -43,19 +43,19 @@ if (isset($_SESSION['usuarios'])) {
 				<h4  id="exampleModalLabel">Nuevo Perfil</h4>
 			</div>
 			<div class="modal-body">
-				<form id="frm-usuarios">
+				<form id="frm-perfil">
 					<div class="form-group">
 					
 					
 						<label for="txt-usuario" class="col-md-2 control-label">Perfil:</label>
 						<div class="col-md-8">
-							<input type="text" name="usuario"  id="txt-usuario" class="form-control input-sm">
+						
 						</div>
 					</div><br><br>
 					<div class="form-group">
-						<label for="cmb-rol" class="col-md-2 control-label">Rol de Usuario:</label>
+						<label for="cmb-mm" class="col-md-2 control-label">Rol de Usuario:</label>
 						<div class="col-md-8">
-							<div id="listado-roles"></div>
+							
 						</div>
 					</div><br><br>
 
@@ -63,16 +63,13 @@ if (isset($_SESSION['usuarios'])) {
 
 						<label for="txt-estado" class="col-md-2 control-label">Estado:</label>
 						<div class="col-md-8">
-							<select type="text" name="estado"  id="txt-estado" class="form-control input-sm">
-								<option value="Act">Activo</option>
-								<option value="Ina">Inactivo</option>
-							</select>
+						
 						</div><br><br>
 					</div>
 				</form>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-primary" id="btn-guardar">
+				<button type="button" class="btn btn-primary" id="btn-jjj">
 					Guardar <i class="glyphicon glyphicon-floppy-disk"></i>
 				</button>
 			</div>
@@ -91,7 +88,13 @@ if (isset($_SESSION['usuarios'])) {
 			</div>
 			<div class="modal-body">
 				<form id="frm-usuarios">
-					<div class="form-group">
+					
+				<div class="form-group">
+						<label for="txt-cedula" class="col-md-2 control-label">Cédula:</label>
+						<div class="col-md-8">
+							<input type="text" name="cedula"  id="txt-cedula" class="form-control input-sm" onkeypress="return solo_numeros(event)">
+						</div>
+					</div><br><br><div class="form-group">
 						<label for="txt-nombre" class="col-md-2 control-label">Nombre:</label>
 						<div class="col-md-8">
 							<input type="text" name="nombre"  id="txt-nombre" class="form-control input-sm" onkeypress="return solo_letras(event)">
@@ -154,8 +157,15 @@ if (isset($_SESSION['usuarios'])) {
 			</div>
 			<div class="modal-body">
 				<form id="frm-usuariosu">
+				<div class="form-group">
+				<input type="hidden" name="id" id="txt-id">
+						<label for="txt-cedulau" class="col-md-2 control-label">Cedula:</label>
+						<div class="col-md-8">
+							<input type="text" name="cedulau"  id="txt-cedulau" class="form-control input-sm" onkeypress="return solo_numeros(event)">
+						</div>
+					</div><br><br>
 					<div class="form-group">
-						<input type="hidden" name="id" id="txt-id">
+						
 						<label for="txt-nombreu" class="col-md-2 control-label">Nombre:</label>
 						<div class="col-md-8">
 							<input type="text" name="nombreu"  id="txt-nombreu" class="form-control input-sm" onkeypress="return solo_letras(event)">

@@ -16,21 +16,23 @@ class usuarios extends conexion
 
 	public function Listar()
 	{
-		$maqv_sql = "SELECT u.id AS k ,nombre,apellido,correo,usuario,rol,idrol ,estado
+		$maqv_sql = "SELECT u.id AS k ,nombre,apellido,correo,usuario,rol,idrol ,estado,cedula
 		           FROM maqv_tblusuario u,maqv_tblrol r 
 		           WHERE r.id=idrol ";
 		$maqv_stmt = $this->maqv_dbh->prepare($maqv_sql);
 		$maqv_stmt->setFetchMode(PDO::FETCH_OBJ);
 		$maqv_stmt->execute();
 		while ($maqv_row = $maqv_stmt->fetch()) {
-			$data = $maqv_row->k . '||' . $maqv_row->nombre . '||' . $maqv_row->apellido . '||' . $maqv_row->correo . '||' . $maqv_row->usuario . '||' . $maqv_row->idrol.'||'.$maqv_row->estado;
+			$data = $maqv_row->k . '||' . $maqv_row->nombre . '||' . $maqv_row->apellido . '||' . $maqv_row->correo . '||' . $maqv_row->usuario . '||' . $maqv_row->idrol.'||'.$maqv_row->estado.'||'.$maqv_row->cedula;
 			echo '<tr>';
+			echo '<td>' . $maqv_row->cedula . '</td>';
 			echo '<td>' . $maqv_row->nombre . '</td>';
 			echo '<td>' . $maqv_row->apellido . '</td>';
 			echo '<td>' . $maqv_row->correo . '</td>';
 			echo '<td>' . $maqv_row->usuario . '</td>';
 			echo '<td>' . $maqv_row->rol . '</td>';
 			echo '<td>' . $maqv_row->estado . '</td>';
+			
 			echo '<td>
 			         <div class="btn-group pull-left">
 		    		    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-espanded="false">   
@@ -82,7 +84,7 @@ class usuarios extends conexion
 	{
 		try {
 
-			$maqv_sql = "INSERT INTO maqv_tblusuario(nombre,apellido,correo,usuario,clave,idrol,estado)VALUES(?,?,?,?,?,?,?)";
+			$maqv_sql = "INSERT INTO maqv_tblusuario(nombre,apellido,correo,usuario,clave,idrol,estado,cedula)VALUES(?,?,?,?,?,?,?,?)";
 			$maqv_stmt = $this->maqv_dbh->prepare($maqv_sql);
 			$maqv_stmt->bindParam(1, $maqv_datos[0]);
 			$maqv_stmt->bindParam(2, $maqv_datos[1]);
@@ -91,6 +93,7 @@ class usuarios extends conexion
 			$maqv_stmt->bindParam(5, $maqv_datos[4]);
 			$maqv_stmt->bindParam(6, $maqv_datos[5]);
 			$maqv_stmt->bindParam(7, $maqv_datos[6]);
+			$maqv_stmt->bindParam(8, $maqv_datos[7]);
 			$maqv_stmt->execute();
 			echo 1;
 		} catch (PDOException $e) {
@@ -112,9 +115,9 @@ class usuarios extends conexion
 	public function VerificarCorreo($maqv_datos)
 	{
 
-		$maqv_sql = "SELECT correo FROM maqv_tblusuario WHERE correo=? ";
+		$maqv_sql = "SELECT cedula FROM maqv_tblusuario WHERE cedula=? ";
 		$maqv_stmt = $this->maqv_dbh->prepare($maqv_sql);
-		$maqv_stmt->bindParam(1, $maqv_datos[2]);
+		$maqv_stmt->bindParam(1, $maqv_datos[7]);
 		$maqv_stmt->execute();
 		$maqv_datos = $maqv_stmt->rowCount();
 		return $maqv_datos;
@@ -125,7 +128,7 @@ class usuarios extends conexion
 	{
 		try {
 
-			$maqv_sql = "UPDATE maqv_tblusuario SET nombre=?,apellido=?,correo=?,usuario=?,idrol=?,estado=? WHERE id=?";
+			$maqv_sql = "UPDATE maqv_tblusuario SET nombre=?,apellido=?,correo=?,usuario=?,idrol=?,estado=?,cedula=? WHERE id=?";
 			$maqv_stmt = $this->maqv_dbh->prepare($maqv_sql);
 			$maqv_stmt->bindParam(1, $maqv_datos[0]);
 			$maqv_stmt->bindParam(2, $maqv_datos[1]);
@@ -134,6 +137,7 @@ class usuarios extends conexion
 			$maqv_stmt->bindParam(5, $maqv_datos[4]);
 			$maqv_stmt->bindParam(6, $maqv_datos[5]);
 			$maqv_stmt->bindParam(7, $maqv_datos[6]);
+			$maqv_stmt->bindParam(8, $maqv_datos[7]);
 			
 			$maqv_stmt->execute();
 			echo 1;

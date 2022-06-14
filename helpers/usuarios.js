@@ -1,42 +1,20 @@
 $('#listado').load('../componentes/usuarios/listado.php');
 $('#listado-roles').load('../componentes/usuarios/listado_roles.php');
 $('#listado-rolesu').load('../componentes/usuarios/listado_rolesu.php');
-function solo_letras(e) {
-  tecla = (document.all) ? e.keyCode : e.which;
-    //tecla para poder borrar
-    if (tecla == 8) {
-      return true;
-  }
-    // expresion para generar espacios \s|$
-    patron = /[a-z-A-Z-\s|$]/;
-    teclaFinal = String.fromCharCode(tecla);
-    return patron.test(teclaFinal);
-}
-
-function verificar_correo(correo) {
-    if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(correo)) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
-function avisos(mensaje,campo){
-
-  toastr.error(mensaje);
-  campo.css("border","solid 1px red");
-
-}
 
 $('#btn-guardar').click(function(){
-
+  cedula=$('#txt-cedula').val();
 	nombre=$('#txt-nombre');
 	apellido=$('#txt-apellido');
 	correo=$('#txt-correo');
 	usuario=$('#txt-usuario');
 	rol=$('#cmb-rol');
 
-	if(!nombre.val()){
+	if(!cedula){
+  	avisos('Nombre campo vacio',cedula);
+  }else if(!verificar_cedula(cedula)){
+    avisos('Cedula Incorrecta',cedula);
+  }else if(!nombre.val()){
 		avisos('Nombre campo vacio',nombre);
 	}else if(!apellido.val()){
 		avisos('Apellido campo vacio',apellido);
@@ -84,7 +62,7 @@ function registrar(){
     }else if(r==2){
       toastr.warning('El Usuario esta Duplicado');
     }else if(r==3){
-      toastr.warning('El Correo Electronico esta Duplicado');
+      toastr.warning('La cédula ya existe');
     }else{
       alertify.alert(r);
     }
@@ -104,19 +82,24 @@ function capturar(datos){
 	$('#txt-usuariou').val(d[4]);
 	$('#cmb-rolu').val(d[5]);
   $('#txt-estadou').val(d[6]);
+  $('#txt-cedulau').val(d[7]);
 
 }
 
 
 $('#btn-editar').click(function(){
-
+  cedula=$('#txt-cedulau').val();
 	nombre=$('#txt-nombreu');
 	apellido=$('#txt-apellidou');
 	correo=$('#txt-correou');
 	usuario=$('#txt-usuariou');
 	rol=$('#cmb-rolu');
 
-	if(!nombre.val()){
+	if(!cedula){
+  	avisos('Nombre campo vacio',cedula);
+  }else if(!verificar_cedula(cedula)){
+    avisos('Cedula Incorrecta',cedula);
+  }else if(!nombre.val()){
 		avisos('Nombre campo vacio',nombre);
 	}else if(!apellido.val()){
 		avisos('Apellido campo vacio',apellido);
@@ -188,3 +171,70 @@ function eliminar(id){
   });
   
 }
+function solo_letras(e) {
+  tecla = (document.all) ? e.keyCode : e.which;
+    //tecla para poder borrar
+    if (tecla == 8) {
+      return true;
+  }
+    // expresion para generar espacios \s|$
+    patron = /[a-z-A-Z-\s|$]/;
+    teclaFinal = String.fromCharCode(tecla);
+    return patron.test(teclaFinal);
+}
+
+function verificar_correo(correo) {
+    if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(correo)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function solo_numeros(e) {
+  tecla = (document.all) ? e.keyCode : e.which;
+  //tecla para poder borrar
+  if (tecla == 8) {
+    return true;
+}
+patron = /[0-9]/;
+teclaFinal = String.fromCharCode(tecla);
+return patron.test(teclaFinal);
+}
+
+
+function avisos(mensaje,campo){
+
+  toastr.error(mensaje);
+  campo.css("border","solid 1px red");
+
+}
+
+
+function verificar_cedula(cedula) {
+  let cad = cedula;
+  let total = 0;
+  let longitud = cad.length;
+  let longcheck = longitud - 1;
+
+  if (cad !== "" && longitud === 10){
+    for(i = 0; i < longcheck; i++){
+      if (i%2 === 0) {
+        var aux = cad.charAt(i) * 2;
+        if (aux > 9) aux -= 9;
+        total += aux;
+    } else {
+            total += parseInt(cad.charAt(i)); // parseInt o concatenará en lugar de sumar
+        }
+    }
+
+    total = total % 10 ? 10 - total % 10 : 0;
+
+    if (cad.charAt(longitud-1) == total) {
+      return true;
+  }else{
+      return false;
+  }
+}
+}
+

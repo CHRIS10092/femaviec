@@ -9,6 +9,7 @@ $maqv_datos=[
 	$_POST['usuariou'],
 	$_POST['rolu'],
 	$_POST['estadou'],
+	$_POST['cedulau'],
 	$_POST['id'],
 	
 
