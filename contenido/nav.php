@@ -84,7 +84,7 @@
 						<ul class="submenu">
 							<li class="">
 								<a href="../vistas/galpones.php">
-								<i class="fa fa-university text-blue"></i>
+								<i class="fa-solid fa-dog-leashed"></i>
 									Galpones 
 								</a>
 
@@ -156,14 +156,7 @@
 
 								<b class="arrow"></b>
 							</li>
-								<li class="nav-item">
-								<a href="../vistas/buscador.php" class="nav-link">
-								<i class="fa fa-print text-success"></i>
-									Control de  Ingresos
-								</a>
-
-								<b class="arrow"></b>
-							</li>
+							
 							
 						</ul>
 

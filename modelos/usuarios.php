@@ -43,6 +43,9 @@ class usuarios extends conexion
 		    		        <li>
 		    			        <a onclick="confirmar(' . $maqv_row->k . ')">Eliminar <i class="fa fa-trash"></i></a>
 		    		        </li>
+							<li>
+							<a data-toggle="modal" data-target="#m-perfil" onclick="capturar(\'' . $data . '\')">Perfil <i class="fa fa-edit"></i></a>
+		    		        </li>
 		    	        </ul>
 		             </div>
 			      </td>';

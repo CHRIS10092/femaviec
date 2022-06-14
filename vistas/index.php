@@ -30,7 +30,7 @@ if (isset($_SESSION['usuarios'])) {
 	{
 		require("backup.php");
 		$backupdb = new backupdb();
-		echo "<a target='_blank' href='{$backupdb->getRuta()}'>Descargar archivo .sql</a>";
+		echo "<a target='_blank' class='btn btn-success' href='{$backupdb->getRuta()}'>Descargar archivo .sql</a>";
 	}
 }
 ?>

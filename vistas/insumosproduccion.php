@@ -15,7 +15,7 @@ if (isset($_SESSION['usuarios'])) {
                 <div class="alert alert-danger alert-dismissible">
                     <center>
                         <h4><i class="fa fa-user"></i> Registro de Insumos de Limpieza y para el  Cuidado  </h4>
-                        <a  class="btn btn-default" href="buscador.php">Ir a Control de Ingresos</a>
+                     
                     </center>
                 </div>
             </div>
@@ -27,12 +27,30 @@ if (isset($_SESSION['usuarios'])) {
 <div class="box box-danger">
     <div class="box-header with-border">
         <h4 class="box-title">Listado Insumos </h4>
-        <button class="btn btn-default btn-group-lg pull-right" data-toggle="modal" data-target="#m-servicio">
-            <i class="fa fa-plus"></i> Nuevo
-        </button>
-        <a href="../controladores/pdf/insumoProduccion.php" class="btn btn-danger" target="_blank">
+    
+        <div class="form-group row">
+    <div class="col-md-4">
+    <a href="../controladores/pdf/insumoProduccion.php" class="btn btn-danger" target="_blank">
                 <i class="fa fa-print">Pdf</i>
             </a>
+            <a  class="btn btn-warning href="buscador.php">Ir a Control de Ingresos</a>
+            <button class="btn btn-warning pull-right" data-toggle="modal" data-target="#m-servicio">
+            <i class="fa fa-plus"></i> Nuevo    
+            </button>
+    </div>
+    <div class="col-md-4">
+    
+    </div>
+    <div class="col-md-4">
+
+    </div>
+
+
+    </div>
+            
+        
+        
+        
     </div>
     <!-- /.box-header -->
     <div class="box-body">

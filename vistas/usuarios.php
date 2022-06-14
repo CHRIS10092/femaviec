@@ -33,6 +33,52 @@ if (isset($_SESSION['usuarios'])) {
 	</div>
 	<!-- /.box-body -->
 </div>
+<div class="modal fade" id="m-perfil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4  id="exampleModalLabel">Nuevo Perfil</h4>
+			</div>
+			<div class="modal-body">
+				<form id="frm-usuarios">
+					<div class="form-group">
+					
+					
+						<label for="txt-usuario" class="col-md-2 control-label">Perfil:</label>
+						<div class="col-md-8">
+							<input type="text" name="usuario"  id="txt-usuario" class="form-control input-sm">
+						</div>
+					</div><br><br>
+					<div class="form-group">
+						<label for="cmb-rol" class="col-md-2 control-label">Rol de Usuario:</label>
+						<div class="col-md-8">
+							<div id="listado-roles"></div>
+						</div>
+					</div><br><br>
+
+						<div class="form-group">
+
+						<label for="txt-estado" class="col-md-2 control-label">Estado:</label>
+						<div class="col-md-8">
+							<select type="text" name="estado"  id="txt-estado" class="form-control input-sm">
+								<option value="Act">Activo</option>
+								<option value="Ina">Inactivo</option>
+							</select>
+						</div><br><br>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" id="btn-guardar">
+					Guardar <i class="glyphicon glyphicon-floppy-disk"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- Modal registro -->
 <div class="modal fade" id="m-usuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
@@ -149,6 +195,7 @@ if (isset($_SESSION['usuarios'])) {
 							</select>
 						</div>
 </div>
+
 				</form>
 			</div>
 			<div class="modal-footer">

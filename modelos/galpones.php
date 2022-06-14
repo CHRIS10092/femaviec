@@ -36,8 +36,8 @@ class galpones extends conexion
     {
         $maqv_sql = "SELECT g.*,pt.* FROM galpones g,  parametrostemperatura pt
         where g.numero=pt.galpon
-        AND g.numero=23
-        AND g.lote=2
+        AND g.numero=?
+        AND g.lote=?
         GROUP BY g.numero
         LIMIT 1";
         $stmt = $this->maqv_dbh->prepare($maqv_sql);
