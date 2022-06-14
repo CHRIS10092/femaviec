@@ -24,7 +24,7 @@ if (isset($_SESSION['usuarios'])) {
 <div class="box box-danger">
     <div class="box-header with-border">
         <h4 class="box-title">Listado Datos Pollos</h4>
-        <button class="btn btn-default btn-group-lg pull-right" data-toggle="modal" data-target="#m-servicio">
+        <button class="btn btn-warning btn-group-lg" data-toggle="modal" data-target="#m-servicio">
             <i class="fa fa-plus"></i> Nuevo
         </button>
         <a href="../controladores/pdf/datospollos.php" class="btn btn-danger" target="_blank">
@@ -71,7 +71,7 @@ if (isset($_SESSION['usuarios'])) {
                                 <option value="Grande">Grande</option>
 
                             </select>
-            <label for="">Galpon</label>
+            <label for="">Galpón</label>
             <div id="galpon"> </div>
         
 
@@ -86,7 +86,7 @@ if (isset($_SESSION['usuarios'])) {
         
                             <label>Responsable</label>
                             <div id="listar-responsable"></div>
-                            <label>Observacion</label>
+                            <label>Observación</label>
                             <input class="form-control" type="text" name="observacion" id="txtObservacion"
                                 class="form-control input-sm">
 
@@ -117,7 +117,7 @@ if (isset($_SESSION['usuarios'])) {
                 <form id="frm-serviciosu">
                     <div class="row">
                         <div class="col-md-6">
-                            <label>Codigo</label>
+                            <label>Código</label>
                             <input class="form-control" readonly type="text" name="id" id="txt-id"
                                 class="form-control input-sm">
                             <label>Caso</label>
@@ -141,7 +141,7 @@ if (isset($_SESSION['usuarios'])) {
                           
                         </div>
                         <div class="col-md-6">
-                              <label>Galpon</label>
+                              <label>Galpón</label>
                             <select name="galponu" id="txtGalponu" class="form-control input-sm">
                                 <option value="1">1</option>
                                 <option value="23">23</option>
@@ -157,7 +157,7 @@ if (isset($_SESSION['usuarios'])) {
                             </select>
                             <label>Responsable</label>
                             <div id="listar-responsableu"></div>
-                            <label>Observacion</label>
+                            <label>Observación</label>
                             <input class="form-control" type="text" name="observacionu" id="txtObservacionu"
                                 class="form-control input-sm">
 

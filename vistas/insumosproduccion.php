@@ -33,8 +33,8 @@ if (isset($_SESSION['usuarios'])) {
     <a href="../controladores/pdf/insumoProduccion.php" class="btn btn-danger" target="_blank">
                 <i class="fa fa-print">Pdf</i>
             </a>
-            <a  class="btn btn-warning href="buscador.php">Ir a Control de Ingresos</a>
-            <button class="btn btn-warning pull-right" data-toggle="modal" data-target="#m-servicio">
+            <a  class="btn btn-warning" href="buscador.php">Ir a Control de Ingresos</a>
+            <button class="btn btn-warning btn-group-lg" data-toggle="modal" data-target="#m-servicio">
             <i class="fa fa-plus"></i> Nuevo    
             </button>
     </div>

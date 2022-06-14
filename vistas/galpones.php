@@ -22,8 +22,8 @@ if (isset($_SESSION['usuarios'])) {
 </div>
 <div class="box box-danger">
     <div class="box-header with-border">
-        <h4 class="box-title">Descargar </h4>
-        <button class="btn btn-default btn-group-lg pull-right" data-toggle="modal" data-target="#m-servicio">
+        <h4 class="box-title"><?php $nbps;$nbps;?>        Descargar </h4>
+        <button class="btn btn-warning btn-group-lg " data-toggle="modal" data-target="#m-servicio">
             <i class="fa fa-plus"></i> Nuevo
         </button>
             <a href="../controladores/pdf/galpones.php" class="btn btn-danger" target="_blank">
@@ -46,27 +46,27 @@ if (isset($_SESSION['usuarios'])) {
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 id="exampleModalLabel">Nuevo Galpon</h4>
+                <h4 id="exampleModalLabel">Nuevo Galpón</h4>
             </div>
             <div class="modal-body">
                 <form id="frm-servicios">
                     <div class="row">
                         <div class="col-md-7">
-                            <label>Numero Galpon</label>
-                            <input class="form-control" type="text" placeholder="SOLO NUMEROS" onkeydown="return solo_numeros(event)" name="galpon"
+                            <label>Número Galpón</label>
+                            <input class="form-control" type="text" placeholder=" INGRESE SOLO NUMEROS" onkeydown="return solo_numeros(event)" name="galpon"
                                 id="txtGalpon" class="form-control input-sm">
                             <label>Medidas</label>
-                            <input class="form-control"  placeholder="NUMERO Y LETRAS" type="text" name="medidas" id="txtMedidas"
+                            <input class="form-control"  placeholder="INGRESE NUMERO Y LETRAS" type="text" name="medidas" id="txtMedidas"
                                 class="form-control input-sm" alt="">
-                            <label>N_Pollos </label>
-                            <input class="form-control" onkeypress="return solo_numeros(event)" placeholder="SOLO NUMEROS" type="number" min="1" max="1000000" name="n_pollos"
+                            <label>Cantidad Pollos </label>
+                            <input class="form-control" onkeypress="return solo_numeros(event)" placeholder="INGRESE SOLO NUMEROS" type="number" min="1" max="1000000" name="n_pollos"
                                 id="txtNpollos" class="form-control input-sm" alt="">
                             <label>Lote</label>
-                            <input class="form-control" type="number" onkeypress="return solo_numeros(event)" placeholder="SOLO NUMEROS" name="lote" id="txtLote"
+                            <input class="form-control" type="number" onkeypress="return solo_numeros(event)" placeholder="INGRESE SOLO NUMEROS" name="lote" id="txtLote"
                                 class="form-control input-sm" alt="">
                             <label>Rango</label>
                             <select name="rango" id="cmb-rango" class="form-control input-sm">
-                                <option value="Pequeno">Peque���o</option>
+                                <option value="Pequeno">Pequeño</option>
                                 <option value="Mediano">Mediano</option>
                                 <option value="Grande">Grande</option>
 
@@ -110,13 +110,13 @@ if (isset($_SESSION['usuarios'])) {
                             <input class="form-control" readonly type="text" name="id" id="txt-id"
                                 class="form-control input-sm">
 
-                            <label>Numero Galpon</label>
+                            <label>Número Galpón</label>
                             <input class="form-control" type="text" onkeypress="solo_numeros(event);" name="galponu"
                                 id="txtGalponu" class="form-control input-sm">
                             <label>Medidas</label>
-                            <input class="form-control" placeholder="NUMERO Y LETRAS" type="text" name="medidasu" id="txtMedidasu"
+                            <input class="form-control" placeholder="INGRESE NUMERO Y LETRAS" type="text" name="medidasu" id="txtMedidasu"
                                 class="form-control input-sm" alt="">
-                            <label>N_Pollos </label>
+                            <label>Cantidad Pollos </label>
                             <input class="form-control" onkeypress="return solo_numeros(event)" placeholder="SOLO NUMEROS" type="number" min="1" max="1000000" name="n_pollosu"
                                 id="txtNpollosu" class="form-control input-sm" alt="">
                             <label>Lote</label>

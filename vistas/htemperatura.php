@@ -25,7 +25,7 @@ if (isset($_SESSION['usuarios'])) {
 <div class="box box-danger">
     <div class="box-header with-border">
         <h4 class="box-title">Listado Herramientas Temperatura</h4>
-        <button class="btn btn-default btn-group-lg pull-right" data-toggle="modal" data-target="#m-servicio">
+        <button class="btn btn-warning btn-group-lg" data-toggle="modal" data-target="#m-servicio">
             <i class="fa fa-plus"></i> Nuevo
         </button>
         <a href="../controladores/pdf/HerramientasTemperatura.php" class="btn btn-danger" target="_blank">
@@ -58,10 +58,10 @@ if (isset($_SESSION['usuarios'])) {
             <input class="form-control input-sm" type="text" name="articulo" id="txtArticulo" alt="">
         
         
-            <label>Parametro</label>
+            <label>Parámetro</label>
             <select class="form-control" type="text" name="parametro" id="txtParametro" >
                 <option value="Temperatura">Temperatura</option>
-                <option value="Humedad">Humedad</option>
+                <option value="Humedad">Húmedad</option>
 
             </select>
         
@@ -100,7 +100,7 @@ if (isset($_SESSION['usuarios'])) {
 <br>
 <div class="form-group row">
     <div class="col-sm-7">
-      <label>Observacion</label>
+      <label>Observación</label>
             <input class="form-control" type="text" name="observacion" id="txtObservacion" alt="">
        
 
@@ -190,7 +190,7 @@ if (isset($_SESSION['usuarios'])) {
                 <form id="frm-serviciosu">
                     <div class="row">
                         <div class="col-md-6">
-             <label>Codigo</label>
+             <label>Código</label>
             <input class="form-control input-sm" type="text" name="id" id="txt-id" alt="">
                          
              <label>Articulo</label>
@@ -199,11 +199,11 @@ if (isset($_SESSION['usuarios'])) {
         
             
         
-            <label>Parametro</label>
+            <label>Parámetro</label>
             
             <select class="form-control" type="text" name="parametrou" id="txtParametrou" >
                 <option value="Temperatura">Temperatura</option>
-                <option value="Humedad">Humedad</option>
+                <option value="Humedad">Húmedad</option>
 
             </select>
             <label>Fecha de Ingreso</label>
@@ -237,7 +237,7 @@ if (isset($_SESSION['usuarios'])) {
     </div>
   </div>
             
-            <label>Observacion</label>
+            <label>Observación</label>
             <input class="form-control" type="text" name="observacionu" id="txtObservacionu" alt="">
        
 

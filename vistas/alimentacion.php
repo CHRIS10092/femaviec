@@ -25,7 +25,7 @@ if (isset($_SESSION['usuarios'])) {
 <div class="box box-danger">
     <div class="box-header with-border">
         <h4 class="box-title">Listado De Alimentación</h4>
-        <button class="btn btn-default btn-group-lg pull-right" data-toggle="modal" data-target="#m-servicio">
+        <button class="btn btn-warning btn-group-lg" data-toggle="modal" data-target="#m-servicio">
             <i class="fa fa-plus"></i> Nuevo
         </button>
         <a href="../controladores/pdf/alimentacion.php" class="btn btn-danger" target="_blank">
@@ -107,10 +107,10 @@ if (isset($_SESSION['usuarios'])) {
                 <form id="frm-serviciosu">
                     <div class="row">
                         <div class="col-md-6">
-                            <label>id</label>
+                            <label>Código</label>
                             <input class="form-control" type="text" name="id" id="txt-id"
                                 class="form-control input-sm">
-                           <label>Galpon</label>
+                           <label>Galpón</label>
                             <div id="listar-galponu" >
                                 
                             </div>

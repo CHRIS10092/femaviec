@@ -23,8 +23,8 @@ if (isset($_SESSION['usuarios'])) {
 </div>
 <div class="box box-danger">
     <div class="box-header with-border">
-        <h4 class="box-title">Listado de Rol</h4>
-        <button class="btn btn-default btn-group-lg pull-right" data-toggle="modal" data-target="#m-servicio">
+        <h4 class="box-title">Listado de Roles</h4>
+        <button class="btn btn-warning btn-group-lg" data-toggle="modal" data-target="#m-servicio">
             <i class="fa fa-plus"></i> Nuevo
         </button>
     </div>
@@ -48,7 +48,7 @@ if (isset($_SESSION['usuarios'])) {
             <div class="modal-body">
                 <form id="frm-servicios">
                     <div class="form-group">
-                        <label for="txt-descripcion" class="col-md-2 control-label">Descripcion:</label>
+                        <label for="txt-descripcion" class="col-md-2 control-label">Descripción:</label>
                         <div class="col-md-8">
                             <input type="text" name="descripcion" id="txt-descripcion" class="form-control input-sm"
                                 onkeypress="return solo_letras(event)" maxlength="13">
@@ -87,7 +87,7 @@ if (isset($_SESSION['usuarios'])) {
                         </div>
                     </div><br><br>
                     <div class="form-group">
-                        <label for="txt-nombreu" class="col-md-2 control-label">Descripcion:</label>
+                        <label for="txt-nombreu" class="col-md-2 control-label">Descripción:</label>
                         <div class="col-md-8">
                            
                             <input type="text" name="descripcionu" id="txt-descripcionu" class="form-control input-sm"

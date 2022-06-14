@@ -23,7 +23,7 @@ if (isset($_SESSION['usuarios'])) {
 <div class="box box-danger">
 	<div class="box-header with-border">
 		<h4 class="box-title">Listado Datos del Cuidador</h4>
-		<button class="btn btn-default btn-group-lg pull-right" data-toggle="modal" data-target="#m-servicio">
+		<button class="btn btn-warning btn-group-lg" data-toggle="modal" data-target="#m-servicio">
 			<i class="fa fa-plus"></i> Nuevo
 		</button>
 		<a href="../controladores/pdf/cuidador.php" class="btn btn-danger" target="_blank">

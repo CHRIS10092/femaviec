@@ -55,7 +55,7 @@ function mostrar_cantidad(datos){
 
 	d= datos.split("||");
 
-	contenido = `<input type="number" id="txtCantidad" class="form-control">
+	contenido = `<label>Ingrese la Cantidad </label><input type="number" id="txtCantidad" class="form-control">
 	             <br>
 	             <button class="btn btn-info" id="btn-guardar" onclick="verificar_campos('${d[0]}','${d[1]}','${d[2]}')">Guardar</button>`;
   

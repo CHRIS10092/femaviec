@@ -23,7 +23,7 @@ if (isset($_SESSION['usuarios'])) {
 <div class="box box-danger">
 	<div class="box-header with-border">
 		<h4 class="box-title">Listado de Usuarios</h4>
-		<button class="btn btn-default btn-group-lg pull-right" data-toggle="modal" data-target="#m-usuario">
+		<button class="btn btn-warning btn-group-lg" data-toggle="modal" data-target="#m-usuario">
 			<i class="fa fa-plus"></i> Nuevo
 		</button>
 	</div>
@@ -161,7 +161,7 @@ if (isset($_SESSION['usuarios'])) {
 				<input type="hidden" name="id" id="txt-id">
 						<label for="txt-cedulau" class="col-md-2 control-label">Cedula:</label>
 						<div class="col-md-8">
-							<input type="text" name="cedulau"  id="txt-cedulau" class="form-control input-sm" onkeypress="return solo_numeros(event)">
+							<input type="text"  readonly="" maxlength="10" name="cedulau"  id="txt-cedulau" class="form-control input-sm" onkeypress="return solo_numeros(event)">
 						</div>
 					</div><br><br>
 					<div class="form-group">
