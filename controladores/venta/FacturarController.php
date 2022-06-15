@@ -58,11 +58,11 @@ function CrearNumeroEmision($fecha, $secuencia)
         <razonSocial>' . $_SESSION['empresa']['nombre'] . '</razonSocial>
         <nombreComercial>' . $_SESSION['empresa']['nombre'] . '</nombreComercial>
         <ruc>' . $_SESSION['empresa']['ruc'] . '</ruc>
-        <claveAcceso>' . $objVenta->emision . '</claveAcceso>
+        <claveAcceso>' . 1 . '</claveAcceso>
         <codDoc>01</codDoc>
         <estab>' . $_SESSION['sucursal']['numest'] . '</estab>
         <ptoEmi>' . $_SESSION['sucursal']['numfact'] . '</ptoEmi>
-        <secuencial>' . $objVenta->numero . '</secuencial>
+        <secuencial>' . 1 . '</secuencial>
         <dirMatriz>' . $_SESSION['empresa']['direccion'] . '</dirMatriz>
     </infoTributaria>
     <infoFactura>
@@ -186,7 +186,7 @@ $objVenta = [
 	"emision"=>CrearNumeroEmision($_POST['fecha'],$numero),
 	"sucursal"=>$_SESSION['sucursal']['codigo'],
 	"estado"=>0,
-	"xml"=>CrearXml($objVenta,$objCliente,$_POST['fecha']),
+	"xml"=>1,//CrearXml($objVenta,$objCliente,$_POST['fecha']),
     "detalleChips"=>$_POST['chipsDetails'],
     "estadoChips"=>$estadoChips
 ];
@@ -210,8 +210,8 @@ foreach($detalleVenta as $obj){
 
 echo "Venta realizada correctamente";
 
-  print_r($objVenta);
-  print_r($objCliente);
+  //print_r($objVenta);
+  //print_r($objCliente);
 
     
 ?>

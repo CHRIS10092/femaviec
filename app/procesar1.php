@@ -1,7 +1,6 @@
 <?php
 session_start();
-//print_r($_SESSION['empresa']['idempresa']);
-//print_r($_SESSION['sucursal']['codigo']);
+
 if (isset($_SESSION['usuario'])) {
 
     require_once 'contenido/head.php';

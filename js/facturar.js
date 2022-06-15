@@ -1,3 +1,12 @@
+
+const ruc_cliente = document.getElementById('identificacion');
+
+const nombre_cliente = document.getElementById('cliente');
+const apellido_cliente = document.getElementById('cliente');
+const direccion_cliente = document.getElementById('direccion');
+const correo_cliente = document.getElementById('correo');
+const celular_cliente = document.getElementById('celular');
+
 let detalle = []
 $("#listadoProductos").load("../data/facturar/listadoProductos.php")
 $("#listadoClientes").load("../data/facturar/listadoClientes.php")
@@ -162,6 +171,42 @@ $('#btnFacturar').click(function(){
 /*
 funcion guadado json de solo chips
 */
+const http = async (url,metodo,data) => {
+
+	const response = await fetch(url,{method:metodo,body:data});
+
+	return await response.json(); 
+
+}
+
+const buscar_cliente = e => {
+
+    let url = '../controladores/procesar/buscar_cliente.php';
+	let rucci = e.target.value;
+    const data = new FormData();
+    data.append('rucci',rucci);
+
+	http(url,'POST',data)
+	    .then(res => {
+	    	if(res.res){
+
+	    		nombre_cliente.value = res.cliente.nombre;
+	    		apellido_cliente.value = res.cliente.apellido;
+	    		direccion_cliente.value = res.cliente.direccion;
+	    		correo_cliente.value = res.cliente.correo;
+	    		celular_cliente.value = res.cliente.celular;
+
+	    	}else{
+
+	    		nombre_cliente.value = '';
+	    		apellido_cliente.value = '';
+	    		direccion_cliente.value = '';
+	    		correo_cliente.value = '';
+	    		celular_cliente.value = '';
+
+	    	}
+	    });
+}
 
 function CollectChips(){
   
@@ -247,3 +292,5 @@ var printContents = document.getElementById('tick').innerHTML;
 document.getElementById('frmVenta').addEventListener('submit',function(e){
 	   e.preventDefault();
 })
+
+ruc_cliente.addEventListener("keyup",buscar_cliente);
