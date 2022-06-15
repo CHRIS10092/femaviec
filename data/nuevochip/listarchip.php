@@ -10,7 +10,7 @@ $adchb_data = new chips();
             <th>ESTADO</th>
 			<th>IDEMPRESA</th>
 			<th>IDSUCURSAL</th>
-			<th>ACCIONES</th>
+			
 		</tr>
 	</thead>
 	<tbody>

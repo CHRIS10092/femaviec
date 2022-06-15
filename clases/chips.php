@@ -67,20 +67,7 @@ class chips extends config
             echo '<td>' . $inv_row->estado . '</td>';
             echo '<td>' . $inv_row->idempresa . '</td>';
             echo '<td>' . $inv_row->idsucursal . '</td>';
-            echo '<td>
-                     <div class="btn-group pull-left">
-                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-espanded="false">
-                            <i class="fa fa-cog"></i> Acciones <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a data-toggle="modal" data-target="#m-mascotasu" onclick="capturar(\'' . $data . '\')">Editar <i class="fa fa-edit"></i></a>
-                            </li> <li>
-                                <a data-toggle="modal" data-target="#m-ver" onclick="detallar(\'' . $data . '\')">Ver <i class="fa fa-edit"></i></a>
-                            </li>
-                        </ul>
-                     </div>
-                  </td>';
+
             echo '</tr>';
 
         }
