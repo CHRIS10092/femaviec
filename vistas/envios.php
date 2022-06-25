@@ -1,4 +1,9 @@
 <?php
+
+$res     = false;
+$mensaje = "";
+
+$ok = 0;
 session_start();
 if (isset($_SESSION['usuarios'])) {
 ?>
@@ -61,6 +66,11 @@ if (!empty($_GET)) {
 
             $query = $con->query($sql);
             if ($query != null) {
+                require_once 'servidor_correos/servicioCorreos.php';
+                $servicio = new ServicioCorreos;
+                $correo='koriche001@gmail.com';
+                $mensaje1="hola mundo" ;
+                $servicio->enviar_email($correo, $mensaje1);
                 print "<script>
 alert(\"Agregado exitosamente.\");window.location='envios.php';
 </script>";
