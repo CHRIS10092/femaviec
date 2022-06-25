@@ -72,12 +72,90 @@ require_once "../contenido/head.php";
       <input type="text" name="codigo" id="txt-codigo" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
     </div>
   </div>
-  <div class="form-group row">
+  
+  <div class="row">
+    <div class="col-md-6">
     <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-2">
+    <div class="col-sm-3">
       <input type="password" class="form-control" id="inputPassword" placeholder="Password">
     </div>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+
   </div>
+  <div class="col-md-6">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+
+  </div>
+  <div class="row">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    
+
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="col-sm-3">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+
+  </div>
+</div>
 </form>
 
 <br>

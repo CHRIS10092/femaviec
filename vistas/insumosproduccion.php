@@ -126,7 +126,7 @@ if (isset($_SESSION['usuarios'])) {
                 <form id="frm-serviciosu">
                     <div class="row">
                         <div class="col-md-6">
-                            <label>Codigo</label>
+                            <label>Código</label>
                             <input class="form-control" readonly type="text" name="id" id="txt-id"
                                 class="form-control input-sm">
 

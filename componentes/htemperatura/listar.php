@@ -10,8 +10,8 @@ $maqv_data = new htemperatura();
             <th>Cantidad</th>
             <th>Parametros</th>
             <th>Fecha</th>
-            <th>Precio<?php$;npbs?> U</th>
-            <th>Precio<?php$;npbs?> T</th>
+            <th>Precio U</th>
+            <th>Precio T</th>
             <th>Observaciones</th>
             <th>Estado</th>
 

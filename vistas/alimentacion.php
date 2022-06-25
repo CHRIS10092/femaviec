@@ -54,12 +54,12 @@ if (isset($_SESSION['usuarios'])) {
                 <form id="frm-servicios">
                     <div class="row">
                         <div class="col-md-6">
-                            <label>Galpon</label>
+                            <label>Galpón</label>
                             <div id="listar-galpon" >
                                 
                             </div>
-                            <label>fecha</label>
-                             <input class="form-control"  type="date" min="2018-07-19"
+                            <label>Fecha</label>
+                             <input class="foóm-control"  type="date" min="2018-07-19"
                                 id="txtFecha" name="fecha" value="<?php echo $fecha; ?>" class="form-control input-sm">
                             <label>Comedero</label>
                             <select name="comedero" id="cmb-comedero" class="form-control input-sm">

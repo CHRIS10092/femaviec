@@ -6,45 +6,45 @@ if (isset($_SESSION['usuarios'])) {
 
             <div class="center">
 												<span class="btn btn-app btn-sm btn-light no-hover">
-													<span class="line-height-1 bigger-170 blue"> 1,411 </span>
+													<span class="line-height-1 bigger-170 blue"> 4 </span>
 
 													<br>
-													<span class="line-height-1 smaller-90"> Views </span>
+													<span class="line-height-1 smaller-90"> Galpones </span>
 												</span>
 
 												<span class="btn btn-app btn-sm btn-yellow no-hover">
-													<span class="line-height-1 bigger-170"> 32 </span>
-
-													<br>
-													<span class="line-height-1 smaller-90"> Followers </span>
-												</span>
-
-												<span class="btn btn-app btn-sm btn-pink no-hover">
 													<span class="line-height-1 bigger-170"> 4 </span>
 
 													<br>
-													<span class="line-height-1 smaller-90"> Projects </span>
+													<span class="line-height-1 smaller-90"> Bebederos </span>
+												</span>
+
+												<span class="btn btn-app btn-sm btn-pink no-hover">
+													<span class="line-height-1 bigger-170"> 3 </span>
+
+													<br>
+													<span class="line-height-1 smaller-90"> Ventiladores </span>
 												</span>
 
 												<span class="btn btn-app btn-sm btn-grey no-hover">
-													<span class="line-height-1 bigger-170"> 23 </span>
+													<span class="line-height-1 bigger-170"> 200 </span>
 
 													<br>
-													<span class="line-height-1 smaller-90"> Reviews </span>
+													<span class="line-height-1 smaller-90"> Cantidad Pollos </span>
 												</span>
 
 												<span class="btn btn-app btn-sm btn-success no-hover">
 													<span class="line-height-1 bigger-170"> 7 </span>
 
 													<br>
-													<span class="line-height-1 smaller-90"> Albums </span>
+													<span class="line-height-1 smaller-90"> Usuarios </span>
 												</span>
 
 												<span class="btn btn-app btn-sm btn-primary no-hover">
-													<span class="line-height-1 bigger-170"> 55 </span>
+													<span class="line-height-1 bigger-170"> 1 </span>
 
 													<br>
-													<span class="line-height-1 smaller-90"> Contacts </span>
+													<span class="line-height-1 smaller-90"> Contactos </span>
 												</span>
 											</div>
 

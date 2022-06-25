@@ -5,14 +5,14 @@ $maqv_data = new datospollos();
 <table id="datos-pollos" class="table table-striped table-hover">
     <thead>
         <tr class="info">
-            <th>codigo</th>
+            <th>Código</th>
             <th>Caso</th>
             <th>Cantidad</th>
             <th>Rango</th>
-            <th>Galpon</th>
+            <th>Galpón</th>
             <th>Lote</th>
             <th>Responsable</th>
-            <th>Observacion</th>
+            <th>Observación</th>
             <th>Empresa</th>
             <th>ACCIONES</th>
 

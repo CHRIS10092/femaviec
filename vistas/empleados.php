@@ -101,13 +101,13 @@ if (isset($_SESSION['usuarios'])) {
 						<div class="col-md-6">
 							<input type="hidden" name="id" id="txt-id">
 							<label>Primer Nombre</label>
-							<input type="text" name="primerNombre" id="txt-primerNombreu" class="form-control input-sm">
+							<input type="text" name="primerNombre" id="txt-primerNombreu" onkeypress="return solo_letras(event)" class="form-control input-sm">
 							<label>Apellido Paterno</label>
-							<input type="text" name="paterno" id="txt-paternou" class="form-control input-sm">
+							<input type="text" name="paterno" id="txt-paternou" onkeypress="return solo_letras(event)" class="form-control input-sm">
 							<label>Fecha de Nacimiento</label>
-							<input type="date" name="fecha" id="txt-fechau" class="form-control input-sm">
+							<input type="date" name="fecha" id="txt-fechau"  class="form-control input-sm">
 							<label>Sexo</label>
-							<select class="form-control input-sm" id="cmb-sexou" name="sexo">
+							<select class="form-control input-sm"  id="cmb-sexou" name="sexo">
 								<option value="0">--seleccionar</option>
 							<option value="Masculino">Masculino</option>
 								<option value="Femenino">Femenino</option>
@@ -115,11 +115,11 @@ if (isset($_SESSION['usuarios'])) {
 						</div>
 						<div class="col-md-6">
 							<label>Segundo Nombre</label>
-							<input type="text" name="segundoNombre" id="txt-segundoNombreu" class="form-control input-sm">
+							<input type="text" name="segundoNombre" onkeypress="return solo_letras(event)" id="txt-segundoNombreu" class="form-control input-sm">
 							<label>Apellido Materno</label>
-							<input type="text" name="materno" id="txt-maternou" class="form-control input-sm">
+							<input type="text" name="materno" onkeypress="return solo_letras(event)" id="txt-maternou" class="form-control input-sm">
 							<label>Edad</label>
-							<input type="text" name="edad" readonly id="txt-edadu" class="form-control input-sm">
+							<input type="text" name="edad" readonly id="txt-edadu" onkeypress="return solo_numeros(event)" class="form-control input-sm">
 							<label>Empresa Perteneciente</label>
 							<div id="listar-empresasu"></div>
 						</div>

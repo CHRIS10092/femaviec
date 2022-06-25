@@ -23,7 +23,7 @@ if (isset($_SESSION['usuarios'])) { ?>
             <div class="col-md-8" style="border-color:red;border:solid 0.3px;padding-bottom: 55px;">
 
             <div class="col-md-4">
-            <label for="">Galpon</label>
+            <label for="">Galpón</label>
             <div id="galpon"> </div>
         </div>
 
@@ -36,7 +36,7 @@ if (isset($_SESSION['usuarios'])) { ?>
         <div class="col-md-3">
             
             <div>
-                <button id="ver" class="form control btn btn-success" style="border-radius: 33px;" name="ver" onclick="Ver();"><i class="fa fa-search"></i>BUSCAR</button>
+                <button id="ver" class="form control btn btn-success" style="border-radius: 33px;" name="ver" onclick="Ver();"><i class="fa fa-search"></i>Buscar</button>
             </div>
 
         </div>

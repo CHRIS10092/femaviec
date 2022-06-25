@@ -14,7 +14,7 @@ if (isset($_SESSION['usuarios'])) { ?>
     <div class="box-body">
 
         <div class="col-md-2">
-            <label for="">Galpon</label>
+            <label for="">Galpón</label>
             <div id="galpon"> </div>
         </div>
 
@@ -27,7 +27,7 @@ if (isset($_SESSION['usuarios'])) { ?>
         <div class="col-md-2">
             
             <div>
-                <button id="ver" class="form control btn btn-success" name="ver" onclick="Ver();">BUSCAR</button>
+                <button id="ver" class="form control btn btn-success" name="ver" onclick="Ver();">Buscar</button>
             </div>
 
         </div>

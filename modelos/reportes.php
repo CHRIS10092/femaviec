@@ -15,7 +15,40 @@ class reportes extends conexion{
 		$result=$maqv_stmt->fetchAll();
 		return $result;
 	}
+public function buscar_cliente($rucci)
+    
+    {
 
+        $res     = false;
+        $cliente = null;
+
+        $sql = "SELECT * FROM tbl_clientes WHERE cli_rucci = :rucci";
+        $ps  = $this->maqv_dbh->prepare($sql);
+        $ps->execute([
+            "rucci"      => $rucci,
+            ]);
+
+        if ($ps->rowCount() > 0) {
+
+            $cliente = new stdClass();
+            while ($rs = $ps->fetch()) {
+                $cliente->nombre    = $rs['cli_nombre'];
+                $cliente->apellido  = $rs['cli_apellido'];
+                $cliente->direccion = $rs['cli_direccion'];
+                $cliente->correo    = $rs['cli_correo'];
+                $cliente->celular   = $rs['cli_celular'];
+            }
+
+            $res = true;
+        }
+
+        $respuesta = [
+            "res"     => $res,
+            "cliente" => $cliente,
+        ];
+
+        return $respuesta;
+    }
 	public function usuarios()
 	{
 		$maqv_sql="SELECT * FROM maqv_tblempleado ";
