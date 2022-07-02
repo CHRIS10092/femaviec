@@ -68,9 +68,18 @@ if (!empty($_GET)) {
             if ($query != null) {
                 require_once 'servidor_correos/servicioCorreos.php';
                 $servicio = new ServicioCorreos;
-                $correo='koriche001@gmail.com';
-                $mensaje1="hola mundo" ;
+                $correo='alexander.roberto1999@hotmail.com';
+                $correo1='Pablo.tenelema.m@gmail.com';
+                $correo2='jessicasayay34@gmail.com';
+                //$correo3='Christian.Salas@hotmail.com';
+                $correo3='koriche001@gmail.com';
+
+                $mensaje1="Saludos Cordiales el galpon ".$idgalpon." con una  temperatura de ".$temperatura."  su ventilador se encuentra en estado ".$ventilador." Mensaje de Femavi Agrícola " ;
                 $servicio->enviar_email($correo, $mensaje1);
+                $servicio->enviar_email($correo1, $mensaje1);
+                $servicio->enviar_email($correo2, $mensaje1);
+                $servicio->enviar_email($correo3, $mensaje1);
+                
                 print "<script>
 alert(\"Agregado exitosamente.\");window.location='envios.php';
 </script>";

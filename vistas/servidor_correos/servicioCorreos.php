@@ -42,12 +42,12 @@ class ServicioCorreos extends conexion
             $mail->Port       = 587;
 
             //Recipients
-            $mail->setFrom($this->correo_origen, ' Urbana');
+            $mail->setFrom($this->correo_origen, ' Agricola Femavi');
             $mail->addAddress($correo_destino, 'Usuario');
 
             //Content
             $mail->isHTML(true);
-            $mail->Subject = 'Here is the subject';
+            $mail->Subject = 'Envio Correo Control de Alertas';
             $mail->Body    = $mensaje_destino;
 
             $mail->send();
