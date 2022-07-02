@@ -81,7 +81,7 @@ if (!empty($_GET)) {
                 $servicio->enviar_email($correo3, $mensaje1);
                 
                 print "<script>
-alert(\"Agregado exitosamente.\");window.location='envios.php';
+alert(\"Agregado exitosamentes.\");window.location='envios.php';
 </script>";
             } else {
 
