@@ -21,15 +21,83 @@ public function listar_g()
         return $rs;
         
     }
-public function ListarGalpon()
-    {
-        $maqv_sql = "SELECT * FROM galpones";
-        $maqv_stmt = $this->maqv_dbh->prepare($maqv_sql);
-        $maqv_stmt->setFetchMode(PDO::FETCH_OBJ);
-        $maqv_stmt->execute();
-        while ($maqv_row = $maqv_stmt->fetch()) {
-            echo '<option value="' . $maqv_row->numero . '" >' . $maqv_row->numero . '</option>';
+    
+
+    public function Listar_Galpon1($num){
+        $sql="SELECT * FROM parametrostemperatura WHERE galpon=? ";
+        $stmt=$this->maqv_dbh->prepare($sql);
+        $stmt->bindParam(1,$num);
+        $stmt->execute();
+        $obj=new StdClass();
+
+        while($row = $stmt->fetch())
+        
+        {
+            $obj->galpon=$row['galpon'];
+            $obj->maximotemp=$row['maximotem'];
+            $obj->minimotemp=$row['minimotem'];
+            $obj->maximohum=$row['maximohum'];
+           
         }
+
+        return $obj;
+    }
+    public function Listar_Galpon2($num){
+        $sql="SELECT * FROM parametrostemperatura WHERE galpon=? ";
+        $stmt=$this->maqv_dbh->prepare($sql);
+        $stmt->bindParam(1,$num);
+        $stmt->execute();
+        $obj=new StdClass();
+
+        while($row = $stmt->fetch())
+        
+        {
+            $obj->galpon=$row['galpon'];
+            $obj->maximotemp=$row['maximotem'];
+            $obj->minimotemp=$row['minimotem'];
+            $obj->maximohum=$row['maximohum'];
+           
+        }
+
+        return $obj;
+    }
+    public function Listar_Galpon3($num){
+        $sql="SELECT * FROM parametrostemperatura WHERE galpon=? ";
+        $stmt=$this->maqv_dbh->prepare($sql);
+        $stmt->bindParam(1,$num);
+        $stmt->execute();
+        $obj=new StdClass();
+
+        while($row = $stmt->fetch())
+        
+        {
+            $obj->galpon=$row['galpon'];
+            $obj->maximotemp=$row['maximotem'];
+            $obj->minimotemp=$row['minimotem'];
+            $obj->maximohum=$row['maximohum'];
+           
+        }
+
+        return $obj;
+    }
+    public function Listar_Galpon4($num){
+        $sql="SELECT * FROM parametrostemperatura WHERE galpon=? ";
+        $stmt=$this->maqv_dbh->prepare($sql);
+        $stmt->bindParam(1,$num);
+        $stmt->execute();
+        $obj=new StdClass();
+
+        while($row = $stmt->fetch())
+        
+        {
+            $obj->galpon=$row['galpon'];
+            $obj->maximotemp=$row['maximotem'];
+            $obj->minimotemp=$row['minimotem'];
+            $obj->maximohum=$row['maximohum'];
+           
+        }
+
+        return $obj;
     }
     
     public function Registrar($maqv_datos)

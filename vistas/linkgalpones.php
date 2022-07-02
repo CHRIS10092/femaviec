@@ -69,9 +69,9 @@ if (isset($_SESSION['usuarios'])) {
            <a href="#">
                 <div class="panel-footer">
                     <span class="pull-left"><?php
-            echo '<a href="pruebas'.$resultado['codigo'].'.php?idg=' . $resultado['galpon'] . '&tmax=' . $resultado['maximotem'] . '&tmin=' . $resultado['minimotem'] . '&hum=' . $resultado['maximohum'] . '">Galpon' . $resultado['galpon'] . '</a>';?></span>
-                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                            <?php echo  $resultado['minimotem']?>
+            echo '<a href="pruebas'.$resultado['codigo'].'.php'. '">Galpon' . $resultado['galpon'] . '</a>';?></span>
+            
+                    
                     <div class="clearfix"></div>
                 </div>
             </a>

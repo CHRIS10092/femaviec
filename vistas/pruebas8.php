@@ -4,27 +4,16 @@ date_default_timezone_set("America/Guayaquil");
 $fecha = date("Y-m-d");
 if (isset($_SESSION['usuarios'])) {
 ?>
-<?php require_once '../contenido/head.php' ?>
-<div class="row">
-    <div class="col-md-12">
-        <div class="box box-danger">
-            <!-- /.box-header -->
-            <div class="box-body">
+<?php require_once '../contenido/head.php' ;
+require_once "../modelos/ptemperatura.php";
+$cones  = new ptemperatura();
+$dato    = $cones->Listar_Galpon3('2');
 
-                <div class="alert alert-danger alert-dismissible">
-                    <center>
-                        <h4><i class="fa fa-user"></i> </h4>
-                    </center>
-                </div>
-            </div>
-            <!-- /.box-body -->
-        </div>
-        <!-- /.box -->
-    </div>
-</div>
+?>
+
 <div class="row">
    
-
+ <?php echo $dato->galpon?>/<?php echo $dato->maximotemp?>/<?php echo $dato->minimotemp?>/<?php echo $dato->maximohum?>
 
 <!--cierro panel-->
 

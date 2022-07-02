@@ -7,7 +7,7 @@ if (isset($_SESSION['usuarios'])) {
 <?php require_once '../contenido/head.php' ;
 require_once "../modelos/ptemperatura.php";
 $cones  = new ptemperatura();
-$dato    = $cones->Listar_Galpon2('23');
+$dato    = $cones->Listar_Galpon4('3');
 
 ?>
 
