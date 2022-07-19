@@ -1,5 +1,5 @@
 <?php 
-require_once'../../modelos/usuarios.php';
+require_once '../../modelos/usuarios.php';
 $maqv_obj=new usuarios();
 if (isset($_POST['correo'])) {
 	$maqv_num_row=$maqv_obj->correo_existente($_POST['correo']);

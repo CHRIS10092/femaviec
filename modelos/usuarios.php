@@ -300,14 +300,14 @@ class usuarios extends conexion
 	public function enviar_correo($correo, $mensaje)
 	{
 
-		require_once '../../template/assets/PHPMailer/Exception.php';
-		require_once '../../template/assets/PHPMailer/PHPMailer.php';
-		require_once '../../template/assets/PHPMailer/SMTP.php';
+		require_once '../vistas/PHPMailer/Exception.php';
+		require_once '../vistas/PHPMailer/PHPMailer.php';
+		require_once '../vistas/PHPMailer/SMTP.php';
 		$mail = new PHPMailer(true);
 
 		try {
 			//Server settings
-			$mail->SMTPDebug = 0;                                       // Enable verbose debug output
+			$mail->SMTPDebug = 3;                                       // Enable verbose debug output
 			$mail->isSMTP();                                            // Set mailer to use SMTP
 			$mail->Host       = 'mail.femavi.com.ec';  // Specify main and backup SMTP servers
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
