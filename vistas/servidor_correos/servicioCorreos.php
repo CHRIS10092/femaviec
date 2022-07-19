@@ -32,14 +32,14 @@ class ServicioCorreos extends conexion
 
         try {
 
-            $mail->SMTPDebug = 3;
+            $mail->SMTPDebug = 0;
             $mail->isSMTP();
             $mail->Host       = $this->host_correo;
             $mail->SMTPAuth   = true;
             $mail->Username   = $this->correo_origen;
             $mail->Password   = $this->password_correo;
-            $mail->SMTPSecure = 'tls';
-            $mail->Port       = 587;
+            $mail->SMTPSecure = 'ssl';
+            $mail->Port       = 465;
 
             //Recipients
             $mail->setFrom($this->correo_origen, ' Femavi');
