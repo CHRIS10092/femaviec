@@ -24,7 +24,7 @@
 								<a href="../vistas/rol.php">
 
 								<img src="../img/icono_roles_usuarios.png" width="20px" height="20px">
-									Cambiar Rol
+									Cambiar Roles
 								</a>
 
 								<b class="arrow"></b>
