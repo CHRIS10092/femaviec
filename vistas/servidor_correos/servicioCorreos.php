@@ -47,7 +47,7 @@ class ServicioCorreos extends conexion
 
             //Content
             $mail->isHTML(true);
-            $mail->Subject = 'Control De Alertas y Envio';
+            $mail->Subject = 'Recuperación de Contraseña';
             $mail->Body    = $mensaje_destino;
 
             $mail->send();

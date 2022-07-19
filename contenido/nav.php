@@ -24,7 +24,7 @@
 								<a href="../vistas/rol.php">
 
 								<img src="../img/icono_roles_usuarios.png" width="20px" height="20px">
-									Roles
+									Cambiar Rol
 								</a>
 
 								<b class="arrow"></b>
@@ -60,7 +60,7 @@
 
 									<img src="../img/icono_base_de_datosmysql.png" width="20px" height="20px">
 
-									Respaldo BBDD
+									Respaldo BD
 								</a>
 
 								<b class="arrow"></b>
