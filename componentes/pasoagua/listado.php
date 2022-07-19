@@ -36,7 +36,7 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
     <thead>
         <tr>
             <th>Codigo</th>
-            <th>hora</th>
+           
             <th>fecha</th>
             <th>Galpon</th>
             <th>Rango</th>
@@ -54,7 +54,7 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
             <?php if ($dato['idgalpon']==23): ?>
         <tr>
             <td><?php echo  $dato["id"] ?></td>
-            <td><?php echo  $dato["hora"] ?> </td>
+            
             <td><?php echo  $dato["fecha"] ?> </td>
             <td><?php echo  $dato["idgalpon"] ?> </td>
             <td><?php echo  $dato["rango"] ?> </td>
@@ -84,7 +84,7 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
             <?php if ($dato['idgalpon']==1): ?>
         <tr>
             <td><?php echo  $dato["id"] ?></td>
-            <td><?php echo  $dato["hora"] ?> </td>
+            
             <td><?php echo  $dato["fecha"] ?> </td>
             <td><?php echo  $dato["idgalpon"] ?> </td>
             <td><?php echo  $dato["rango"] ?> </td>
@@ -114,7 +114,7 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
             <?php if ($dato['idgalpon']==2): ?>
         <tr>
             <td><?php echo  $dato["id"] ?></td>
-            <td><?php echo  $dato["hora"] ?> </td>
+            
             <td><?php echo  $dato["fecha"] ?> </td>
             <td><?php echo  $dato["idgalpon"] ?> </td>
             <td><?php echo  $dato["rango"] ?> </td>
@@ -143,7 +143,7 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
             <?php if ($dato['idgalpon']==3): ?>
         <tr>
             <td><?php echo  $dato["id"] ?></td>
-            <td><?php echo  $dato["hora"] ?> </td>
+            
             <td><?php echo  $dato["fecha"] ?> </td>
             <td><?php echo  $dato["idgalpon"] ?> </td>
             <td><?php echo  $dato["rango"] ?> </td>

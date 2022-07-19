@@ -35,12 +35,12 @@ caption {
 	<thead>
 		<tr>
 			<th>ID</th>
-			<th>CEDULA</th>
-			<th>NOMBRE</th>
-			<th >APELLIDO</th>
-			<th >TEMPERATURA</th>
-			<th>CARGO</th>
-			<th>REGISTRO</th>
+			<th>ARTICULO</th>
+			<th>CANTIDAD</th>
+			<th >FECHA</th>
+			<th >COSTO</th>
+			<th>TOTAL</th>
+			<th>RUC</th>
 			
 
 		</tr>

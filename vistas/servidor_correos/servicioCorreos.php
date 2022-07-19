@@ -1,5 +1,5 @@
 <?php
-require_once '../modelos/conexion.php';
+require_once '../../modelos/conexion.php';
 
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
@@ -24,15 +24,15 @@ class ServicioCorreos extends conexion
 
         $res = false;
 
-        require_once 'PHPMailer/Exception.php';
-        require_once 'PHPMailer/PHPMailer.php';
-        require_once 'PHPMailer/SMTP.php';
+        require_once '../../vistas/PHPMailer/Exception.php';
+        require_once '../../vistas/PHPMailer/PHPMailer.php';
+        require_once '../../vistas/PHPMailer/SMTP.php';
 
         $mail = new PHPMailer(true);
 
         try {
 
-            $mail->SMTPDebug = 0;
+            $mail->SMTPDebug = 3;
             $mail->isSMTP();
             $mail->Host       = $this->host_correo;
             $mail->SMTPAuth   = true;

@@ -297,7 +297,7 @@ class usuarios extends conexion
 
 
 
-	public function enviar_correo($correo, $mensaje)
+	/*public function enviar_correo($correo, $mensaje)
 	{
 
 		require_once '../../vistas/PHPMailer/Exception.php';
@@ -307,7 +307,7 @@ class usuarios extends conexion
 
 		try {
 			//Server settings
-			$mail->SMTPDebug = 3;                                       // Enable verbose debug output
+			$mail->SMTPDebug = 0;                                       // Enable verbose debug output
 			$mail->isSMTP();                                            // Set mailer to use SMTP
 			$mail->Host       = 'mail.femavi.com.ec';  // Specify main and backup SMTP servers
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
@@ -330,5 +330,5 @@ class usuarios extends conexion
 		} catch (Exception $e) {
 			//echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 		}
-	}
+	}*/
 }

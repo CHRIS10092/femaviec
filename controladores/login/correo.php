@@ -1,6 +1,8 @@
 <?php 
 require_once '../../modelos/usuarios.php';
+require_once '../../vistas/servidor_correos/servicioCorreos.php';
 $maqv_obj=new usuarios();
+$servicos_correo= new ServicioCorreos();
 if (isset($_POST['correo'])) {
 	$maqv_num_row=$maqv_obj->correo_existente($_POST['correo']);
 
@@ -11,7 +13,7 @@ if (isset($_POST['correo'])) {
 		$maqv_obj->temporal($usuario,$clave_temporal);
 
 		$mensaje="clave de recuperacion es: ".$clave_temporal;
-		$maqv_obj->enviar_correo($_POST['correo'],$mensaje);
+		$servicos_correo->enviar_email($_POST['correo'],$mensaje);
 		echo 1;
 	}else{
 		echo 2;
