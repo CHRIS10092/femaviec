@@ -97,7 +97,7 @@ $('#btn-enviar').click(function(){
 
 function verificar_correo(correo){
 	$.ajax({
-		url: 'http://localhost/femaviec/controladores/login/correo.php',
+		url: 'controladores/login/correo.php',
 		type: 'POST',
 		data: {correo: correo},
 	})
