@@ -35,7 +35,7 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Codigo</th>
+            <th>Código</th>
            
             <th>fecha</th>
             <th>Galpon</th>
