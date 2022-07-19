@@ -300,9 +300,9 @@ class usuarios extends conexion
 	public function enviar_correo($correo, $mensaje)
 	{
 
-		require_once '../vistas/PHPMailer/Exception.php';
-		require_once '../vistas/PHPMailer/PHPMailer.php';
-		require_once '../vistas/PHPMailer/SMTP.php';
+		require_once '../../vistas/PHPMailer/Exception.php';
+		require_once '../../vistas/PHPMailer/PHPMailer.php';
+		require_once '../../vistas/PHPMailer/SMTP.php';
 		$mail = new PHPMailer(true);
 
 		try {
