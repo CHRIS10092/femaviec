@@ -56,15 +56,16 @@ if (!empty($_GET)) {
             $ventilador = $_GET['v'];
 
 
-            $host = "localhost";
-            $user = "root";
-            $password = "";
-            $db = "femaviee";
+           
+            $host = "116.202.115.200";
+            $user = "femavico_wp";
+            $password = "LhEWo8xLkNtT";
+            $db = "femavico_femavi";
             $con = mysqli_connect($host, $user, $password, $db);
 
             $sql = "INSERT INTO `registros`(`fecha`, `idgalpon`, `temperatura`, `humedadgalpon`, `bebedero1`,`bebedero2`,`bebedero3`,`bebedero4`, `bomba1`,`bomba2`,`bomba3`,`bomba4`, `ventilador`) VALUES ('$fecha','$idgalpon','$temperatura','$humedadgalpon','$bebedero1','$bebedero2','$bebedero3','$bebedero4','$bomba1','$bomba2','$bomba3','$bomba4','$ventilador')";
 
-            $query = $con->query($sql);
+              $query = $con->query($sql);
             if ($query != null) {
                 require_once 'servidor_correos/servicioCorreos.php';
                 $servicio = new ServicioCorreos;
@@ -75,12 +76,12 @@ if (!empty($_GET)) {
                 $correo3='koriche001@gmail.com';
 
                 $mensaje1="Saludos Cordiales el galpon ".$idgalpon." con una  temperatura de ".$temperatura."  su ventilador se encuentra en estado ".$ventilador." Mensaje de Femavi Agrícola " ;
-                //$servicio->enviar_email($correo, $mensaje1);
-                //$servicio->enviar_email($correo1, $mensaje1);
-                //$servicio->enviar_email($correo2, $mensaje1);
-                //$servicio->enviar_email($correo3, $mensaje1);
+                $servicio->enviar_email($correo, $mensaje1);
+                $servicio->enviar_email($correo1, $mensaje1);
+                $servicio->enviar_email($correo2, $mensaje1);
+                $servicio->enviar_email($correo3, $mensaje1);
                 
-                print "<script>
+                                print "<script>
 alert(\"Agregado exitosamente\"+\"$idgalpon\"+\"$temperatura\"+\"$humedadgalpon\" );window.location='envios.php';
 </script>";
             } else {

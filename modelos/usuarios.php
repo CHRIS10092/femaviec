@@ -317,7 +317,7 @@ class usuarios extends conexion
 			$mail->Port       = 587;                                    // TCP port to connect to
 
 			//Recipients
-			$mail->setFrom('correo@femavi.com.ec', 'Web ');
+			$mail->setFrom('correo@femavi.com.ec', 'Web');
 			$mail->addAddress($correo, 'Proveedor');     // cliente
 
 			// Content

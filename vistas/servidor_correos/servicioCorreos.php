@@ -7,9 +7,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 class ServicioCorreos extends conexion
 {
 
-    private $host_correo     = "smtp.gmail.com";
-    private $correo_origen   = "koriche001@gmail.com";
-    private $password_correo = "dnngjrkolwdjdqtd";
+    private $host_correo     = "mail.femavi.com.ec";
+    private $correo_origen   = "correo@femavi.com.ec";
+    private $password_correo = "i81DU)9h7?BN";
 
     private $db;
 
@@ -42,12 +42,12 @@ class ServicioCorreos extends conexion
             $mail->Port       = 587;
 
             //Recipients
-            $mail->setFrom($this->correo_origen, ' Agricola Femavi');
+            $mail->setFrom($this->correo_origen, ' Femavi');
             $mail->addAddress($correo_destino, 'Usuario');
 
             //Content
             $mail->isHTML(true);
-            $mail->Subject = 'Envio Correo Control de Alertas';
+            $mail->Subject = 'Control De Alertas y Envio';
             $mail->Body    = $mensaje_destino;
 
             $mail->send();
