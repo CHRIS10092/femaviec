@@ -9,7 +9,7 @@ class ServicioCorreos extends conexion
 
     private $host_correo     = "mail.femavi.com.ec";
     private $correo_origen   = "correo@femavi.com.ec";
-    private $password_correo = "i81DU)9h7?BN";
+    private $password_correo = ";+k7x(QWmJAL";
 
     private $db;
 
@@ -32,7 +32,7 @@ class ServicioCorreos extends conexion
 
         try {
 
-            $mail->SMTPDebug = 3;
+            $mail->SMTPDebug = 0;
             $mail->isSMTP();
             $mail->Host       = $this->host_correo;
             $mail->SMTPAuth   = true;
