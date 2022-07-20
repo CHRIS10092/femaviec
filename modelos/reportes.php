@@ -51,7 +51,7 @@ public function buscar_cliente($rucci)
     }
 	public function usuarios()
 	{
-		$maqv_sql="SELECT * FROM maqv_tblempleado ";
+		$maqv_sql="SELECT * FROM maqv_tblusuario ";
 		$maqv_stmt=$this->maqv_dbh->prepare($maqv_sql);
 		$maqv_stmt->execute();
 		$result=$maqv_stmt->fetchAll();

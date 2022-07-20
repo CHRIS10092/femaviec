@@ -38,26 +38,21 @@ $obj = new reportes();
         <tr>
             <th>Nombres</th>
             <th>Apellidos</th>
-            <th>Sexo</th>
-            <th>Fecha Nacimiento</th>
+            <th>Cedula</th>
+            <th>Correo</th>
         </tr>
     </thead>
     <?php foreach ($row as $k) : ?>
     <tr>
-        <td><?php echo $k['primer_nombre'] . ' ' . $k['segundo_nombre']; ?></td>
-        <td><?php echo $k['apellido_paterno'] . ' ' . $k['apellido_materno']; ?></td>
-        <td><?php echo $k['sexo']; ?></td>
-        <td><?php echo $k['fecha']; ?></td>
+        <td><?php echo $k['nombre'] ; ?></td>
+        <td><?php echo $k['apellido'] ; ?></td>
+        <td><?php echo $k['cedula']; ?></td>
+        <td><?php echo $k['correo']; ?></td>
     </tr>
 
     <?php endforeach ?>
 </table>
-<center>
+<!--<center>
     <h3>Numero de Grupos de Usuarios</h3>
-</center>
-<?php $row1 = $obj->grafico_usuarios(); ?>
-<?php foreach ($row1 as $k) : ?>
-<?php echo "sexo: " . $k['sexo']; ?>
-<div style="width:<?php echo $k['cont'] ?>%;border: solid 1px black;height: 5%;background: red;"></div>
-<?php echo $k['cont']; ?><br>
-<?php endforeach ?>
+</center>-->
+
