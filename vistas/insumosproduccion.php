@@ -84,10 +84,10 @@ if (isset($_SESSION['usuarios'])) {
                             <input class="form-control" type="date" name="fecha" value="<?php echo $fecha; ?>" id="txtFecha"
                                 class="form-control input-sm" alt="">
                             <label>Precio Unitario</label>
-                            <input class="form-control" type="text" onkeypress="return solo_numeros(event)" onkeydown="calcular()" value="0.00" name="precioUni"
+                            <input class="form-control" type="text" onkeypress="return solo_numeros(event)" onkeyup="calculardescuento(this)"  value="0.00" name="precioUni"
                                 id="txtPrecioUni" class="form-control input-sm" alt="">
                             <label>Precio Total</label>
-                            <input class="form-control" type="text" onkeypress="return solo_numeros(event)"  name="precioTot" id="txtPrecioTot" alt=""
+                            <input class="form-control" type="text"  onkeypress="return solo_numeros(event)"  name="precioTot" id="txtPrecioTot" alt=""
                                 class="form-control input-sm" readonly value="">
                                 <label>Tipo</label>
                             <select name="tipo" id="cmb-tipo" class="form-control input-sm">
@@ -140,7 +140,7 @@ if (isset($_SESSION['usuarios'])) {
                             <input class="form-control" type="date" name="fechau" id="txtFechau"
                                 class="form-control input-sm" alt="">
                             <label>Precio Unitario</label>
-                            <input class="form-control" type="text" onkeypress="return solo_numeros(event)"  onkeydown="calcular()" name="precioUniu"
+                            <input class="form-control" type="text" onkeypress="return solo_numeros(event)" onkeyup="calculardescuentou(this)" name="precioUniu"
                                 id="txtPrecioUniu" class="form-control input-sm" alt="">
                             <label>Precio Total</label>
                             <input class="form-control" type="text" onkeypress="return solo_numeros(event)"  name="precioTotu" id="txtPrecioTotu" alt=""

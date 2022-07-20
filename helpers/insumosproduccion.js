@@ -19,6 +19,47 @@ $('#btn-registrar').click(function(){
     }
 })
 
+function calculardescuento(des){
+
+	//vacios
+	
+	let txtprecio=(parseFloat(document.getElementById('txtCantidad').value));
+		let txtPrecioUnitario=parseFloat(des.value)
+	//dolares
+	
+	if(des.value!=''){
+			txttotaldes=txtprecio*txtPrecioUnitario;
+			$('#txtPrecioTot').val(txttotaldes.toFixed(2));
+			//si escoje porcentajes
+	
+	}else{
+		$('#txtPrecioTot').val('0.00');
+	}
+		
+
+
+}
+function calculardescuentou(des){
+
+	//vacios
+	
+	let txtprecio=(parseFloat(document.getElementById('txtCantidadu').value));
+		let txtPrecioUnitario=parseFloat(des.value)
+	//dolares
+	
+	if(des.value!=''){
+			txttotaldes=txtprecio*txtPrecioUnitario;
+			$('#txtPrecioTotu').val(txttotaldes.toFixed(2));
+			//si escoje porcentajes
+	
+	}else{
+		$('#txtPrecioTotu').val('0.00');
+	}
+		
+
+
+}
+
 function calcular() {
 
     cantidad=parseInt(document.getElementById('txtCantidad').value)
