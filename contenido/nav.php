@@ -118,6 +118,15 @@
 								<b class="arrow"></b>
 							</li>
 							<li class="">
+								<a href="../vistas/listado_distribucion.php">
+								<img src="../img/icono_de_insumos.png" width="20px" height="20px">
+								
+									Listado Distribución
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
 								<a href="../vistas/datospollos.php">
 
 								<img src="../img/icono_registro_de_pollos.png" width="20px" height="20px">
