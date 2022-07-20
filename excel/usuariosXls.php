@@ -28,14 +28,14 @@ require_once'../modelos/reportes.php';
 $obj=new reportes();
 ?>
 <?php $row=$obj->usuarios();?>
-<center><h3>Listado de Usuarios del Sistema Ocupacional</h3></center>
+<center><h3>Listado de Usuarios del Sistema Femavi</h3></center>
 <table>
 	<thead style="background: #26c6da;color: white;font-weight: bolder;">
 	<tr>
-		<th>Nombres</th>
-		<th>Apellidos</th>
-		<th>Cedula</th>
-		<th>Correo</th>
+		<td>Nombres</td>
+		<td>Apellidos</td>
+		<td>Cedula</td>
+		<td>Correo</td>
 	</tr>
 	</thead>
  	<?php foreach ($row as $k): ?>
@@ -49,9 +49,3 @@ $obj=new reportes();
  		
  	<?php endforeach ?>
 </table>
-<center><h3>Numero de Grupos de Usuarios</h3></center>
-<?php $row1=$obj->grafico_usuarios(); ?>
-<?php foreach ($row1 as $k): ?>
-	<?php echo "sexo: ".$k['sexo']; ?>
-	<div  style="width:<?php echo $k['cont'] ?>%;border: solid 1px black;height: 5%;background: red;"></div><?php echo $k['cont']; ?><br>
-<?php endforeach ?>
