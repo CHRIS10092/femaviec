@@ -33,7 +33,7 @@ $obj = new reportes();
 <center>
     <h3>Listado de Usuarios del Sistema Avicola </h3>
 </center>
-<table class="table table-responsive">
+<table class="table table-responsive " width="100%">
     <thead style="background: #26c6da;color: white;font-weight: bolder;">
         <tr>
             <th>Nombres</th>
