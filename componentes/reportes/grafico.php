@@ -4,13 +4,13 @@ $obj = new reportes();
 ?>
 <?php if ($_POST['reportes'] == 1) { ?>
 <?php
-  $titulo = 'USUARIOS POR SEXO';
+  $titulo = 'USUARIOS ACTIVOS';
   $valoresY = array();
   $valoresX = array();
   $row = $obj->grafico_usuarios();
   foreach ($row as $k) {
     $valoresY[] = $k["cont"];
-    $valoresX[] = $k["sexo"];
+    $valoresX[] = $k["estado"];
   }
 
   $datosX = json_encode($valoresX);

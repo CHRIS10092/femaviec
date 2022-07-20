@@ -9,7 +9,7 @@ class reportes extends conexion{
 
 	public function grafico_usuarios()
 	{
-		$maqv_sql="SELECT COUNT(sexo)AS cont,sexo FROM maqv_tblempleado GROUP BY (sexo)";
+		$maqv_sql="SELECT COUNT(estado)AS cont,estado FROM maqv_tblusuario GROUP BY (estado)";
 		$maqv_stmt=$this->maqv_dbh->prepare($maqv_sql);
 		$maqv_stmt->execute();
 		$result=$maqv_stmt->fetchAll();
