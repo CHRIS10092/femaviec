@@ -27,6 +27,14 @@ class distribuir extends conexion
 		return $rs;
 	}
 
+	public function  listar_distribucion(){
+		$sql="SELECT * FROM tbldistribucion";
+		$stmt=$this->maqv_dbh->prepare($sql);
+		$stmt->execute();
+		$rs=$stmt->fetchAll(PDO::FETCH_ASSOC);
+		return $rs;
+	}
+
 	public function listar_zonas(){
 		$sql="SELECT * FROM galpones";
 		$ps = $this->maqv_dbh->prepare($sql);

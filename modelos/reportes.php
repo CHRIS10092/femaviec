@@ -73,6 +73,15 @@ public function buscar_cliente($rucci)
 		$result=$maqv_stmt->fetchAll();
 		return $result;
 	}
+	public function distribucion()
+	{
+		$maqv_sql="SELECT * FROM tbldistribucion ";
+		$maqv_stmt=$this->maqv_dbh->prepare($maqv_sql);
+		$maqv_stmt->execute();
+		$result=$maqv_stmt->fetchAll();
+		return $result;
+	}
+	
 
 public function insumoProduccion()
 	{

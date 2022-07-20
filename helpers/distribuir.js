@@ -1,4 +1,5 @@
 $("#listado-tipos").load("../componentes/distribuir/listado_tipo.php");
+$("#listado-distri").load("../componentes/distribuir/listado-distribucion.php")
 
 $("#btnBuscarTipo").click(function(){
 
