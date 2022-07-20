@@ -34,8 +34,8 @@ $obj=new reportes();
 	<tr>
 		<th>Nombres</th>
 		<th>Apellidos</th>
-		<th>Sexo</th>
-		<th>Fecha Nacimiento</th>
+		<th>Cedula</th>
+		<th>Correo</th>
 	</tr>
 	</thead>
  	<?php foreach ($row as $k): ?>
