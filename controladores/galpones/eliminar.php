@@ -13,5 +13,7 @@ if($_POST['estado']=="Ina") {
 	echo 4;
 }
 
+
+
 //print_r($_POST['estado']);
 //print_r($_POST['id']);

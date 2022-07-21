@@ -103,7 +103,7 @@ function editar(){
 function confirmar(id,estado){
 
 
-    estado=$('#cmb-estado');
+    estado=$('#cmb-estadou');
   alertify.confirm('Confirmar','Desea Eliminar el Registro ?',
                    function(){
                     eliminar(id,estado.val());
@@ -114,7 +114,7 @@ function confirmar(id,estado){
 
 function eliminar(id,estado){
 
-  
+  estado=$('#cmb-estadou').val();
   $.ajax({
     url: '../controladores/galpones/eliminar.php',
     type: 'POST',
@@ -125,7 +125,7 @@ function eliminar(id,estado){
       toastr.success('Registro Eliminado');
       $('#listado').load('../componentes/galpones/listar.php');
     }else if(r==3){
-      toastr.success('No se peude elimiar por que sta Activo');
+      toastr.error('No se puede eliminar por que esta Activo');
     }else{
       alertify.alert(r);
     }

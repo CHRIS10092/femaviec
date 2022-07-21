@@ -148,7 +148,7 @@ public function listar_bebederos($idgalpon, $idlote)
                         class="fa fa-edit"></i></a>
             </li>
             <li>
-                <a onclick="confirmar(' .$maqv_row->codigo . '||' . $maqv_row->estado. ')">Eliminar <i class="fa fa-trash"></i></a>
+                <a onclick="eliminar(' .$datas. ')">Eliminar <i class="fa fa-trash"></i></a>
             </li>
         </ul>
     </div>

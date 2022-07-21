@@ -29,7 +29,11 @@
     </div>
     <div class="login-box">
         <div class="login-logo">
-            <a><b>Femavi</b> Ec</a>
+        
+                    <div class="row">
+                        <label style="background-color:white" for="">FE.MA.VI</label>
+                    </div>
+        
         </div>
 
         <div class="login-box-body">
