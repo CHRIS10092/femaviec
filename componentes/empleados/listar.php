@@ -5,7 +5,7 @@ $maqv_data=new empleados();
 <table id="tbl-empleados" class="table table-striped table-hover">
 	<thead>
 		<tr class="info">
-			<th>Usuario Servicio</th>
+			<th>Usuario </th>
 			<th>Fecha de Nacimiento</th>
 			<th>Sexo</th>
 			<th>Empresa</th>

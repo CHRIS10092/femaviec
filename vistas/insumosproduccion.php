@@ -75,7 +75,7 @@ if (isset($_SESSION['usuarios'])) {
                     <div class="row">
                         <div class="col-md-7">
                             <label>Articulo</label>
-                            <input class="form-control" type="text" name="articulo" id="txtArticulo"
+                            <input class="form-control" type="text" onkeypress="return solo_letras(event)" name="articulo" id="txtArticulo"
                                 class="form-control input-sm">
                             <label>Cantidad</label>
                             <input max="1000000" min="0" class="form-control" onkeypress="return solo_numeros(event)"  type="number" value="0.00" name="cantidad"
@@ -131,7 +131,7 @@ if (isset($_SESSION['usuarios'])) {
                                 class="form-control input-sm">
 
                             <label>Articulo</label>
-                            <input class="form-control" type="text" name="articulou" id="txtArticulou"
+                            <input class="form-control" type="text"  onkeypress="return solo_letras(event)" name="articulou" id="txtArticulou"
                                 class="form-control input-sm">
                             <label>Cantidad</label>
                             <input max="1000000" min="0" class="form-control" onkeypress="return solo_numeros(event)"  type="number" name="cantidadu"

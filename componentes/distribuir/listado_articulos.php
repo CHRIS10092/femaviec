@@ -7,12 +7,12 @@ $datos = $obj->listar_articulos($_GET["tipo"]);
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th>Codigo</th>
-			<th>Npmbre</th>
+			<th>Código</th>
+			<th>Nombre</th>
 			<th>Cantidad</th>
 			<th>Fecha</th>
 			<th>Tipo</th>
-			<th>Accion</th>
+			<th>Acción</th>
 		</tr>
 	</thead>
 	<tbody>

@@ -57,6 +57,14 @@ public function buscar_cliente($rucci)
 		$result=$maqv_stmt->fetchAll();
 		return $result;
 	}
+	public function cuidador()
+	{
+		$maqv_sql="SELECT * FROM maqv_tblempleado ";
+		$maqv_stmt=$this->maqv_dbh->prepare($maqv_sql);
+		$maqv_stmt->execute();
+		$result=$maqv_stmt->fetchAll();
+		return $result;
+	}
 	public function galpones()
 	{
 		$maqv_sql="SELECT * FROM galpones ";

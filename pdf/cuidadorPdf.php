@@ -29,7 +29,7 @@ caption {
 require_once '../modelos/reportes.php';
 $obj = new reportes();
 ?>
-<?php $row = $obj->usuarios(); ?>
+<?php $row = $obj->cuidador(); ?>
 <center>
     <h3>Listado de Cuidador del Sistema Avicola </h3>
 </center>

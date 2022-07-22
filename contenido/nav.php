@@ -119,7 +119,7 @@
 							</li>
 							<li class="">
 								<a href="../vistas/listado_distribucion.php">
-								<img src="../img/icono_de_insumos.png" width="20px" height="20px">
+								<img src="../img/icons8-control-panel-48.png" width="20px" height="20px">
 								
 									Listado Distribución
 								</a>

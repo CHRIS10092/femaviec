@@ -125,7 +125,7 @@ if (isset($_SESSION['usuarios'])) {
                             <label>Rango</label>
                             <select name="rangou" id="cmb-rangou" class="form-control input-sm">
                                 <option value="Pequeno">Pequeño</option>
-                                <option value="Mediano">Pediano</option>
+                                <option value="Mediano">Mediano</option>
                                 <option value="Grande">Grande</option>
 
                             </select>
