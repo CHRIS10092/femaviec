@@ -37,7 +37,13 @@ if (isset($_SESSION['usuario_temp'])) {
                         NUMEROS <br> CARACTERES ESPECIALES <br> MINIMO DE 8 CARACTERES</li>
                 </ul>
             </div>
-            <div class="col-md-6">
+         
+            <div class="col-md-6" style="
+    background: white;
+    margin: initial;
+    padding-top: 21px;
+    margin-top: 3px;
+">
                 <div class="alert alert-danger">
                     <center><i class="fa fa-lock"></i> Recuperacion de Clave de Seguridad</center>
                 </div>
@@ -62,6 +68,7 @@ if (isset($_SESSION['usuario_temp'])) {
                 </div><br><br>
 
             </div>
+        
         </div>
     </div>
 </body>
