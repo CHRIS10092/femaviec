@@ -23,7 +23,7 @@ if (isset($_SESSION['usuarios'])) {
 </div>
 <div class="box box-danger">
     <div class="box-header with-border">
-        <h4 class="box-title">Listado Parametros Temperatura</h4>
+        <h4 class="box-title">Listado Parámetros Temperatura</h4>
         <button class="btn btn-warning btn-group-lg" data-toggle="modal" data-target="#m-servicio">
             <i class="fa fa-plus"></i> Nuevo
         </button>

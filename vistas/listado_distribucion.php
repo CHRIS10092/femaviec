@@ -6,14 +6,21 @@ require '../contenido/head.php';
 
 if (isset($_SESSION['usuarios'])) { ?>
 
-<div class="box box-danger">
-    <div class="box-header with-border">
-        <center><h4 class="box-title"><i class="fa fa-home"></i> Historial de Articulos  Distribuidos  </h4><br></center>
-        
-    </div>
-    <!-- /.box-header -->
-  </div>
-        
+<div class="row">
+	<div class="col-md-12">
+		<div class="box box-danger">
+			<!-- /.box-header -->
+			<div class="box-body">
+
+				<div class="alert alert-danger alert-dismissible">
+					<center><h4><i class="fa fa-pie-chart"></i> Artículos Distribuidos</h4></center>
+				</div>
+			</div>
+			<!-- /.box-body -->
+		</div>
+		<!-- /.box -->
+	</div>
+</div>
     <div class="row">
         <div class="form-group row">
             <div class="col-md-2" style="padding-left: 33px;">
