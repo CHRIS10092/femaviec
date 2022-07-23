@@ -2,7 +2,7 @@
 session_start();
 date_default_timezone_set("America/Guayaquil");
 $fecha = date("Y-m-d");
-require_once '../clases/procesar.php';
+require_once '../modelos/procesar.php';
 require_once '../helpers/funciones.php';
 //print_r($_SESSION['usuario'][11]);
 $obj = new Procesar;
@@ -11,7 +11,7 @@ $numero = $obj->obtener_numero_venta($_SESSION['empresa']['idempresa']);
 
 $secuencia = secuenciales($numero, 9);
 
-require_once '../clases/NotasCredito.php';
+require_once '../modelos/NotasCredito.php';
     $obj = new NotasCredito;
     $data = $obj->GetById($_GET['id']);
     //print_r($data);
@@ -153,7 +153,7 @@ img {
 	</div>
 	<br>
 <?php
-	require_once '../clases/NotasCredito.php';
+	require_once '../modelos/NotasCredito.php';
 $adchb_data = new NotasCredito();
 $datos=$adchb_data->detalles($_GET['id'],$_SESSION['empresa']['idempresa'],$_SESSION['sucursal']['codigo']);
 $datos1=$adchb_data->detalles1($_GET['id'],$_SESSION['empresa']['idempresa'],$_SESSION['sucursal']['codigo']);

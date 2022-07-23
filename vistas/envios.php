@@ -67,7 +67,9 @@ if (!empty($_GET)) {
 
               $query = $con->query($sql);
             if ($query != null) {
-                require_once 'servidor_correos/servicioCorreos.php';
+                
+                require_once '../vistas/servidor_correos/servicioCorreos1.php';
+                
                 $servicio = new ServicioCorreos;
                 $correo='alexander.roberto1999@hotmail.com';
                 $correo1='Pablo.tenelema.m@gmail.com';
@@ -76,10 +78,9 @@ if (!empty($_GET)) {
                 $correo3='koriche001@gmail.com';
 
                 $mensaje1="Saludos Cordiales el galpon ".$idgalpon." con una  temperatura de ".$temperatura."  su ventilador se encuentra en estado ".$ventilador." Mensaje de Femavi Agrícola " ;
-                $servicio->enviar_email($correo, $mensaje1);
+                
                 $servicio->enviar_email($correo1, $mensaje1);
                 $servicio->enviar_email($correo2, $mensaje1);
-                $servicio->enviar_email($correo3, $mensaje1);
                 
                                 print "<script>
 alert(\"Agregado exitosamente\"+\"$idgalpon\"+\"$temperatura\"+\"$humedadgalpon\" );window.location='envios.php';
