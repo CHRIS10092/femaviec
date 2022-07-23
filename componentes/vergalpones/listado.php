@@ -5,7 +5,7 @@ $datos = $obj->listar_datospollos($_GET["galpon"], $_GET['lote']);
 ?>
 <br>
 
-<table class="table table-striped">
+<table  class="table table-striped">
     <thead>
         <tr>
             <th>Código</th>
@@ -89,7 +89,7 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
 </script>
 -->
 
-<table class="table table-striped">
+<table id="tbl_datos" class="table table-striped">
     <thead>
         <tr>
             <th>Codigo</th>
@@ -195,6 +195,9 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
         <?php endforeach; ?>
     </tbody>
 </table>
+<script>
+    $('#tbl_datos').DataTable({});
 
+</script>
 
  
