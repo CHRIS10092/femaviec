@@ -10,8 +10,8 @@ $datos = $obj->listar_stock($_GET["lote"], $_GET['galpon']);
     <thead>
         <tr>
             <th>Stock Actual</th>
-            <th>IdArticulo</th>
-            <th>Articulo</th>
+            <th>Id Artículo</th>
+            <th>Artículo</th>
             <th>Cantidad Distribuidos</th>
             <th>Galpón</th>
             

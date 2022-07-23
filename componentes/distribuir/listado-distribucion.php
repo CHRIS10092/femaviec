@@ -8,7 +8,7 @@ $datos = $obj->listar_stock($_GET['lote'],$_GET['galpon']);
 	<thead>
 		<tr>
 			<th>Id</th>
-			<th>Articulo</th>
+			<th>Artículo</th>
 			<th>Galpón</th>
 			<th>Cantidad</th>
 			

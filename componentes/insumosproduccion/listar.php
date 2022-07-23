@@ -6,7 +6,7 @@ $maqv_data = new insumosproduccion();
     <thead>
         <tr class="info">
             <th>Id</th>
-            <th>Articulo</th>
+            <th>Artículo</th>
             <th>Cantidad</th>
             <th>Fecha</th>
             <th>PrecioUni</th>

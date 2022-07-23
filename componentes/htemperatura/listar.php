@@ -6,9 +6,9 @@ $maqv_data = new htemperatura();
     <thead>
         <tr class="info">
             <th>Id</th>
-            <th>Articulo</th>
+            <th>Artículo</th>
             <th>Cantidad</th>
-            <th>Parametros</th>
+            <th>Parámetros</th>
             <th>Fecha</th>
             <th>Precio U</th>
             <th>Precio T</th>
