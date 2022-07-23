@@ -13,7 +13,7 @@ $maqv_data = new insumosproduccion();
             <th>PrecioTot</th>
             <th>Empresa</th>
            <th>Tipo</th>
-            <th>ACCIONES</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>

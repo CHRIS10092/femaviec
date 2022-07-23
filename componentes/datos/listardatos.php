@@ -11,11 +11,11 @@ $obj = new datos();
 <thead>
 <tr>
 
-	<th>ID</th>
-	<th>GALPON</th>
-	<th>MEDIDAS</th>
+	<th>Id</th>
+	<th>Galpón</th>
+	<th>Medidas</th>
 
-	<th>ACCION</th>
+	<th>Acción</th>
 
 </tr>
 </thead>

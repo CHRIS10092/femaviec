@@ -13,11 +13,11 @@ $datos = $obj->listar_stock($_GET["lote"], $_GET['galpon']);
             <th>IdArticulo</th>
             <th>Articulo</th>
             <th>Cantidad Distribuidos</th>
-            <th>Galpon</th>
+            <th>Galpón</th>
             
-            <th>medidas</th>
+            <th>Medidas</th>
             
-            <th>estado</th>
+            <th>Estado</th>
             
         </tr>
     </thead>

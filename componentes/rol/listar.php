@@ -6,9 +6,9 @@ $maqv_data = new rol();
     <thead>
         <tr class="info">
 
-            <th>ID</th>
-            <th>ROl</th>
-            <th>ACCIONES</th>
+            <th>Id</th>
+            <th>Rol</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>

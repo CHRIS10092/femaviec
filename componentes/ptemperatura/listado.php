@@ -5,14 +5,14 @@ $maqv_data = new ptemperatura();
 <table id="datos-pollos" class="table table-striped table-hover">
     <thead>
         <tr class="info">
-            <th>Codigo</th>
-            <th>Galpon</th>
-            <th>Maxima Temp</th>
-            <th>Minimo Temp</th>
-            <th>Humedad</th>
+            <th>Código</th>
+            <th>Galpón</th>
+            <th>Máxima Temp</th>
+            <th>Mínimo Temp</th>
+            <th>Húmedad</th>
             
 
-            <th>ACCIONES</th>
+            <th>Acciones</th>
 
         </tr>
     </thead>

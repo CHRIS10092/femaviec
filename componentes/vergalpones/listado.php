@@ -8,12 +8,12 @@ $datos = $obj->listar_datospollos($_GET["galpon"], $_GET['lote']);
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Codigo</th>
-            <th>Galpon</th>
+            <th>Código</th>
+            <th>Galpón</th>
             <th>Lote</th>
-            <th>temperatuta Min</th>
-            <th>temperatura Max</th>
-            <th>Humedad </th>
+            <th>Temperatuta Min</th>
+            <th>Temperatura Max</th>
+            <th>Húmedad </th>
             
         </tr>
     </thead>

@@ -5,15 +5,15 @@ $maqv_data = new galpones();
 <table id="tbl-galpon" class="table table-striped table-hover">
     <thead>
         <tr class="info">
-            <th>Codigo</th>
-            <th>Galpon</th>
+            <th>Código</th>
+            <th>Galpón</th>
             <th>Medidas</th>
             <th>N_ Pollos</th>
             <th>Lote</th>
             <th>Rango</th>
             <th>Estado</th>
 
-            <th>ACCIONES</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>

@@ -14,7 +14,7 @@ $maqv_data = new datospollos();
             <th>Responsable</th>
             <th>Observación</th>
             <th>Empresa</th>
-            <th>ACCIONES</th>
+            <th>Acciones</th>
 
         </tr>
     </thead>

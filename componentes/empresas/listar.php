@@ -8,7 +8,7 @@ $maqv_data=new empresas();
 			<th>Ruc</th>
 			<th>Nombre</th>
 			<th>Ciudad</th>
-			<th>ACCIONES</th>
+			<th>Acciones</th>
 		</tr>
 	</thead>
 	<tbody>

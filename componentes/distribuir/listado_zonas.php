@@ -7,8 +7,8 @@ $datos = $obj->listar_zonas();
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th>Galpon</th>
-			<th>Accion</th>
+			<th>Galpón</th>
+			<th>Acción</th>
 		</tr>
 	</thead>
 	<tbody>

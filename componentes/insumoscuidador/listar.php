@@ -13,7 +13,7 @@ $maqv_data = new insumoscuidador();
             <th>PrecioTot</th>
             <th>Empresa</th>
 
-            <th>ACCIONES</th>
+            <th>Acciones</th>
         </tr>
     </thead>
     <tbody>

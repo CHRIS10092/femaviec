@@ -5,15 +5,15 @@ $maqv_data=new usuarios();
 <table id="tbl-usuarios" class="table table-striped table-hover">
 	<thead>
 		<tr class="info">
-		<th>CEDULA</th>	
-        <th>NOMBRE</th>
-			<th>APELLIDO</th>
-			<th>CORREO</th>
-			<th>USUARIO</th>
-			<th>ROL DE USUARIO</th>
-			<th>ESTADO</th>
+		<th>Cédula</th>	
+        <th>Nombre</th>
+			<th>Apellido</th>
+			<th>Correo</th>
+			<th>Usuario</th>
+			<th>Rol De Usuario</th>
+			<th>Estado</th>
             
-			<th>ACCIONES</th>
+			<th>Acciones</th>
 		</tr>
 	</thead>
 	<tbody>

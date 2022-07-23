@@ -7,10 +7,10 @@ $datos = $obj->listar_stock($_GET['lote'],$_GET['galpon']);
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th>id</th>
-			<th>articulo</th>
-			<th>galpón</th>
-			<th>cantidad</th>
+			<th>Id</th>
+			<th>Articulo</th>
+			<th>Galpón</th>
+			<th>Cantidad</th>
 			
 			
 		</tr>

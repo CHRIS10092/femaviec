@@ -12,7 +12,7 @@ $obj=new reportes();
 	<tr>
 		<th>Nombres</th>
 		<th>Apellidos</th>
-		<th>cedula</th>
+		<th>Cédula</th>
 		<th>Correo</th>
 	</tr>
  	<?php foreach ($row as $k): ?>
