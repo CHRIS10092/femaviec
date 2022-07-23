@@ -23,14 +23,14 @@ if (isset($_SESSION['usuarios'])) {
 													<span class="line-height-1 bigger-170"> 3 </span>
 
 													<br>
-													<span class="line-height-1 smaller-90"> Ventiladores </span>
+													<span class="line-height-1 smaller-80"> Ventiladores </span>
 												</span>
 
 												<span class="btn btn-app btn-sm btn-grey no-hover">
-													<span class="line-height-1 bigger-170"> 200 </span>
+													<span class="line-height-3 bigger-170"> 200 </span>
 
 													<br>
-													<span class="line-height-1 smaller-90"> Cantidad Pollos </span>
+													<span class="line-height-4 smaller-70"> Cantidad Pollos </span>
 												</span>
 
 												<span class="btn btn-app btn-sm btn-success no-hover">

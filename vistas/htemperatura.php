@@ -203,7 +203,7 @@ if (isset($_SESSION['usuarios'])) {
             
             <select class="form-control" type="text" name="parametrou" id="txtParametrou" >
                 <option value="Temperatura">Temperatura</option>
-                <option value="Humedad">Húmedad</option>
+                <option value="Humedad">Humedad</option>
 
             </select>
             <label>Fecha de Ingreso</label>
