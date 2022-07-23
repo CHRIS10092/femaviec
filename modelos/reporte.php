@@ -18,13 +18,13 @@ class reporte extends conexion{
 		$inv_stmt->execute();
 		while($inv_row=$inv_stmt->fetch()){
 			echo '<tr>';
-			echo '<td style="text-align:center">'.$inv_row->codigo.'</td>';
-			echo '<td style="text-align:center">'.$inv_row->articulo.'</td>';
+			echo '<td style="text-align:left">'.$inv_row->codigo.'</td>';
+			echo '<td style="text-align:left">'.$inv_row->articulo.'</td>';
 			echo '<td>'.$inv_row->cantidad.'</td>';
-			echo '<td  style="text-align: center;">'.$inv_row->fecha.'</td>';
-			echo '<td style="text-align: center;">'.($inv_row->precioTot).'</td>';
-			echo '<td style="text-align: center;">'.($inv_row->precioUni).'</td>';
-			echo '<td style="text-align: center;">'.($inv_row->ruc).'</td>';
+			echo '<td  style="text-align: left;">'.$inv_row->fecha.'</td>';
+			echo '<td style="text-align: left;">'.($inv_row->precioTot).'</td>';
+			echo '<td style="text-align: left;">'.($inv_row->precioUni).'</td>';
+			echo '<td style="text-align: left;">'.($inv_row->ruc).'</td>';
 			echo '</tr>';
 
 		}

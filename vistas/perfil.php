@@ -74,9 +74,7 @@ if (isset($_SESSION['usuarios'])) {
 									<span><?php echo $usuario; ?></span><br></center>
 									<label>Nuevo Usuario</label>
 									<input type="text" id="txt-usuario" class="form-control"><br>
-									<center><button class="btn btn-success" id="btn-usuario">
-										Actualizar Usuario
-									</button></center>
+									
 								</div>
 
 								<div class="col-md-4"><hr>

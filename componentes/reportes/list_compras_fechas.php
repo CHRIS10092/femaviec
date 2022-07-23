@@ -2,9 +2,12 @@
 require_once '../../modelos/reporte.php';
 $adchb_data = new reporte();
 ?>
-<table class="table table-striped table-hover">
+<style>
+
+	</style>
+<table class="table table-hover">
 	<thead>
-		<tr class="info">
+		<tr class="">
 			<th>Número</th>
 			<th>Articulo</th>
 			<th>Cantidad</th>
