@@ -92,7 +92,7 @@ if (isset($_SESSION['usuarios'])) {
 				<div class="form-group">
 						<label for="txt-cedula" class="col-md-2 control-label">Cédula:</label>
 						<div class="col-md-8">
-							<input type="text" name="cedula"  id="txt-cedula" class="form-control input-sm" onkeypress="return solo_numeros(event)">
+							<input type="text" name="cedula" maxlength="10"  id="txt-cedula" class="form-control input-sm" onkeypress="return solo_numeros(event)">
 						</div>
 					</div><br><br><div class="form-group">
 						<label for="txt-nombre" class="col-md-2 control-label">Nombre:</label>
@@ -159,7 +159,7 @@ if (isset($_SESSION['usuarios'])) {
 				<form id="frm-usuariosu">
 				<div class="form-group">
 				<input type="hidden" name="id" id="txt-id">
-						<label for="txt-cedulau" class="col-md-2 control-label">Cedula:</label>
+						<label for="txt-cedulau"  class="col-md-2 control-label">Cedula:</label>
 						<div class="col-md-8">
 							<input type="text"  readonly="" maxlength="10" name="cedulau"  id="txt-cedulau" class="form-control input-sm" onkeypress="return solo_numeros(event)">
 						</div>

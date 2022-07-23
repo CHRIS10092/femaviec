@@ -42,13 +42,13 @@ if (isset($_SESSION['usuario_temp'])) {
                     <center><i class="fa fa-lock"></i> Recuperacion de Clave de Seguridad</center>
                 </div>
                 <div class="form-group">
-                    <label for="txt-detalle" class="col-md-5 control-label">Clave Nueva:</label>
+                    <label for="txt-detalle" style="background: white;" class="col-md-5 control-label">Clave Nueva:</label>
                     <div class="col-md-7">
                         <input type="password" id="txt-clave" class="form-control input-sm">
                     </div>
                 </div><br><br>
                 <div class="form-group">
-                    <label for="txt-detalle" class="col-md-5 control-label">Repita la Clave:</label>
+                    <label for="txt-detalle" style="background: white;" class="col-md-5 control-label">Repita la Clave:</label>
                     <div class="col-md-7">
                         <input type="password" id="txt-repita" class="form-control input-sm">
                     </div>

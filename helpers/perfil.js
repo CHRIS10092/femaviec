@@ -12,7 +12,7 @@ $('#btn-usuario').click(function(){
 
 function confirmar_usuario(usuario){
 
-  alertify.confirm('Confirmar','Desea Cambiar la Cuenta de Usuario ?',
+  alertify.confirm('Confirmar','Desea Cambiar la Constraseña de la Cuenta ?',
                    function(){
                     cambiar_usuario(usuario);
                    },
