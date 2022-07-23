@@ -8,7 +8,7 @@ if (isset($_SESSION['usuarios'])) { ?>
 
 <div class="box box-danger">
     <div class="box-header with-border">
-        <center><h4 class="box-title"><i class="fa fa-home"></i> Historial de Encendido de Ventiladores </h4><br></center>
+        <center><h4 class="box-title"><i class="fa fa-home"></i> Historial de Articulos  Distribuidos  </h4><br></center>
         
     </div>
     <!-- /.box-header -->
@@ -18,7 +18,7 @@ if (isset($_SESSION['usuarios'])) { ?>
         <div class="form-group row">
             <div class="col-md-2" style="padding-left: 33px;">
             
-            <img src="../img/encendido.gif" width="100" height="130">
+            
             </div>
             <div class="col-md-8" style="border-color:red;border:solid 0.3px;padding-bottom: 55px;">
 
@@ -44,7 +44,7 @@ if (isset($_SESSION['usuarios'])) { ?>
             <div class="col-md-2" style="padding-left: 33px;">
 
             
-            <img src="../img/apagado.jpg" width="100" height="130">
+
             </div>
             </div>
     </div>
