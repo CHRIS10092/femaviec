@@ -1,7 +1,7 @@
 <?php
 require_once "../../modelos/distribuir.php";
 $obj=new  distribuir();
-$datos = $obj->listar_distribucion();
+$datos = $obj->listar_stock($_GET['lote'],$_GET['galpon']);
 ?>
 
 <table class="table table-striped">

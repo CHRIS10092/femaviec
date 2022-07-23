@@ -9,6 +9,17 @@ class galpones extends conexion
         $this->maqv_dbh = conexion::Abrir();
     }
 
+    public function ListarArticulos()
+    {
+        $maqv_sql = "SELECT * FROM insumoproduccion";
+        $maqv_stmt = $this->maqv_dbh->prepare($maqv_sql);
+        $maqv_stmt->setFetchMode(PDO::FETCH_OBJ);
+        $maqv_stmt->execute();
+        while ($maqv_row = $maqv_stmt->fetch()) {
+            echo '<option value="' . $maqv_row->codigo . '" >' . $maqv_row->articulo . '</option>';
+        }
+    }
+
     public function ListarGalpones()
     {
         $maqv_sql = "SELECT * FROM galpones";
