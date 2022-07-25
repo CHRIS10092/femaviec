@@ -28,10 +28,11 @@ if (isset($_SESSION['usuarios'])) { ?>
             <table class="table table-striped table-sm">
                 <thead>
                     <tr>
-                        <th>Numero factura</th>
-                        <th>Fecha</th>
-                        <th>Cliente</th>
+                        <th>Numero Galpón</th>
+                        
+                        <th>Lote</th>
                         <th>Estado</th>
+                        <th>Medidas</th>
                         <th>Accion</th>
                     </tr>
                 </thead>

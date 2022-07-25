@@ -277,7 +277,7 @@ require_once 'conexion.php';
     {
         
         $sql = "SELECT * FROM  galpones g 
-        WHERE  g.idempresa= :idempresa";
+        WHERE  g.idempresa= ?";
         $stmt = $this->dbh->prepare($sql);
         $stmt->bindParam(1, $idempresa);
         $stmt->execute();
@@ -288,7 +288,7 @@ require_once 'conexion.php';
             $obj->medidas = $rs['medidas'];
             $obj->estado = $rs['estado'];
             $obj->empresa = $rs['idempresa'];
-            $obj->numero = $rs['numero'];
+            $obj->lote = $rs['lote'];
         }
         return $obj;
     }

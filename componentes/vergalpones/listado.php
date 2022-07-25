@@ -92,10 +92,10 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
 <table id="tbl_datos" class="table table-striped">
     <thead>
         <tr>
-            <th>Codigo</th>
+            <th>Código</th>
             <th>hora</th>
             <th>fecha</th>
-            <th>Galpon</th>
+            <th>Galpón</th>
             <th>Rango</th>
             <th>Ventilador</th>
         
@@ -196,8 +196,26 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
     </tbody>
 </table>
 <script>
-    $('#tbl_datos').DataTable({});
-
+    $('#tbl_datos').DataTable({
+     language: {
+        "decimal": "",
+        "emptyTable": "No hay información",
+        "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+        "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+        "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+        "infoPostFix": "",
+        "thousands": ",",
+        "lengthMenu": "Mostrar _MENU_ Entradas",
+        "loadingRecords": "Cargando...",
+        "processing": "Procesando...",
+        "search": "Buscar:",
+        "zeroRecords": "Sin resultados encontrados",
+        "paginate": {
+            "first": "Primero",
+            "last": "Ultimo",
+            "next": "Siguiente",
+            "previous": "Anterior"
+        }
+    },
+});
 </script>
-
- 
