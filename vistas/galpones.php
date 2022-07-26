@@ -53,16 +53,16 @@ if (isset($_SESSION['usuarios'])) {
                     <div class="row">
                         <div class="col-md-7">
                             <label>Número Galpón</label>
-                            <input class="form-control" type="text" placeholder=" INGRESE SOLO NUMEROS" onkeydown="return solo_numeros(event)" name="galpon"
+                            <input class="form-control" maxlength="3" type="text" placeholder=" INGRESE SOLO NUMEROS" onkeydown="return solo_numeros(event)" name="galpon"
                                 id="txtGalpon" class="form-control input-sm">
                             <label>Medidas</label>
-                            <input class="form-control"  placeholder="INGRESE NUMERO Y LETRAS" type="text" name="medidas" id="txtMedidas"
+                            <input class="form-control" maxlength="10" placeholder="INGRESE NUMERO Y LETRAS" type="text" name="medidas" id="txtMedidas"
                                 class="form-control input-sm" alt="">
                             <label>Cantidad Pollos </label>
-                            <input class="form-control" onkeypress="return solo_numeros(event)" placeholder="INGRESE SOLO NUMEROS" type="number" min="1" max="1000000" name="n_pollos"
+                            <input class="form-control" maxlength="4" onkeypress="return solo_numeros(event)" placeholder="INGRESE SOLO NUMEROS" type="number" min="1" max="1000000" name="n_pollos"
                                 id="txtNpollos" class="form-control input-sm" alt="">
                             <label>Lote</label>
-                            <input class="form-control" type="number" onkeypress="return solo_numeros(event)" placeholder="INGRESE SOLO NUMEROS" name="lote" id="txtLote"
+                            <input class="form-control" type="number" maxlength="3" onkeypress="return solo_numeros(event)" placeholder="INGRESE SOLO NUMEROS" name="lote" id="txtLote"
                                 class="form-control input-sm" alt="">
                             <label>Rango</label>
                             <select name="rango" id="cmb-rango" class="form-control input-sm">

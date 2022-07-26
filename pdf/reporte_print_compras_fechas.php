@@ -28,19 +28,52 @@ caption {
    font-weight: bold;
    font-style: italic;
 }
+img{
+    width: 420px;
+    heigth: 12px;
+    margin-left:323px;
+}
+.derecha{
+    float:right;
+    
+     /*border: 1px solid #999;*/
+    }
+    .izquierda{
+        float:left;
+        font-size:12px;
+        margin-top:30px;
+    margin-bottom: 0px;
+    padding-left:40px;
+
+        /*border: 1px solid #999;*/
+    }
 </style>
+
+<div class="row">
+<div class="derecha">
+<img src="../../img/f.png">
+</div>
+<div class="izquierda">
+<p style="font-size:16px;padding-top: 1px;margin-top:-3px;">RUCCI:1725261521001</p>
+<p style="font-size:16px;padding-top: -4px;margin-top:-3px;">Teléfono:0980073905</p>
+<p style="font-size:16px;padding-top: -4px;margin-top:-3px;">Dirección:Bucay</p>
+<p style="font-size:16px;padding-top: -4px;margin-top:-3px;">Página Web:Femavi.com.ec</p>
+<p style="font-size:16px;padding-top: -4px;margin-top:-3px;">Correo:correo@femavi.com.ec</p>
+</div>
+</div>
+
 <span style="display:block;text-align: right;font-size: 18px;color: #F73E07;margin-bottom:75px; ">Reporte  Por Fechas</span>
 <center><h3>FECHAS <?php echo $_GET['desde'] ?> al <?php echo $_GET['hasta'] ?></h3></center><br>
 <table class="table table-striped table-hover">
 	<thead>
 		<tr>
 			<th>ID</th>
-			<th>ARTICULO</th>
-			<th>CANTIDAD</th>
-			<th >FECHA</th>
-			<th >COSTO</th>
-			<th>TOTAL</th>
-			<th>RUC</th>
+			<th>Articulo</th>
+			<th>Cantidad</th>
+			<th >Fecha</th>
+			<th >Costo</th>
+			<th>Total</th>
+			<th>Ruc</th>
 			
 
 		</tr>

@@ -24,7 +24,25 @@ caption {
     font-weight: bold;
     font-style: italic;
 }
-</style>
+img{
+    width: 420px;
+    heigth: 12px;
+    margin-left:323px;
+}
+.derecha{
+    float:right;
+    
+     /*border: 1px solid #999;*/
+    }
+    .izquierda{
+        float:left;
+        font-size:12px;
+        margin-top:30px;
+    margin-bottom: 0px;
+    padding-left:40px;
+
+        /*border: 1px solid #999;*/
+    }
 
 </style>
 <?php

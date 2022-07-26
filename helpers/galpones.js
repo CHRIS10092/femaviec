@@ -3,11 +3,15 @@ $('#btn-registrar').click(function(){
 	
     medidas=$('#txtMedidas');
     lote=$('#txtLote');
+    n_cantidad=$('#txtNpollos');
     estado=$('#cmb-estado');
 
     if(!medidas.val()){
-    	avisos('caso campo vacio',medidas);
-    
+    	avisos('Medidas campo vacio',medidas);
+    }else if(!n_cantidad.val()){
+    	avisos('Cantidad campo vacio',n_cantidad);
+    }else if(n_cantidad.val()>2000){
+    	avisos('No se puede ingresar por que la cantidad supera a 2000 ',n_cantidad);
     }else if(!lote.val()){
     	avisos('lote campo vacio',lote);
     }else if(estado.val()==0){
