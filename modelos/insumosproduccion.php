@@ -63,12 +63,12 @@ class insumosproduccion extends conexion
 
     public function Listar()
     {
-        $maqv_sql = "SELECT * FROM insumoproduccion";
+        $maqv_sql = "SELECT ip.*,e.* from insumoproduccion ip, maqv_tblempresa e where ip.idempresa=e.id";
         $maqv_stmt = $this->maqv_dbh->prepare($maqv_sql);
         $maqv_stmt->setFetchMode(PDO::FETCH_OBJ);
         $maqv_stmt->execute();
         while ($maqv_row = $maqv_stmt->fetch()) {
-            $data = $maqv_row->codigo . '||' . $maqv_row->articulo . '||' . $maqv_row->cantidad . '||' . $maqv_row->fecha  . '||' . $maqv_row->precioUni . '||' . $maqv_row->precioTot . '||' . $maqv_row->idempresa. '||' . $maqv_row->tipo;
+            $data = $maqv_row->codigo . '||' . $maqv_row->articulo . '||' . $maqv_row->cantidad . '||' . $maqv_row->fecha  . '||' . $maqv_row->precioUni . '||' . $maqv_row->precioTot . '||' . $maqv_row->idempresa. '||' . $maqv_row->tipo. '||' . $maqv_row->nombre;
             echo '<tr>';
             echo '<td>' . $maqv_row->codigo . '</td>';
             echo '<td>' . $maqv_row->articulo . '</td>';
@@ -76,7 +76,7 @@ class insumosproduccion extends conexion
             echo '<td>' . $maqv_row->fecha . '</td>';
             echo '<td>' . $maqv_row->precioUni . '</td>';
             echo '<td>' . $maqv_row->precioTot . '</td>';
-            echo '<td>' . $maqv_row->idempresa . '</td>';
+            echo '<td>' . $maqv_row->nombre . '</td>';
               echo '<td>' . $maqv_row->tipo . '</td>';
           
 

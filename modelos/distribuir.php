@@ -42,6 +42,18 @@ class distribuir extends conexion
 	$rs=$stmt->fetchAll(PDO::FETCH_ASSOC);
 	return $rs;
 	}
+	public function listar_stock1($galpon){
+		$sql="SELECT sum(d.cantidad) as sumados,d.*,i.* FROM tbldistribucion d, insumoproduccion i WHERE d.id_subzonas=:idgalpon
+		AND d.id_articulo=i.codigo GROUP by `id_articulo`";
+	$stmt=$this->maqv_dbh->prepare($sql);
+	$stmt->execute([
+	
+		"idgalpon"=>$galpon,
+	]);
+
+	$rs=$stmt->fetchAll(PDO::FETCH_ASSOC);
+	return $rs;
+	}
 	public function  listar_distribucion(){
 		$sql="SELECT * FROM tbldistribucion";
 		$stmt=$this->maqv_dbh->prepare($sql);
