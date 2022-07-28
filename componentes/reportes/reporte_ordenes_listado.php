@@ -1,5 +1,5 @@
 <?php 
-require_once'../../modelos/reporte.php';
+require_once '../../modelos/reporte.php';
 
 $obj=new reporte();
 $fecha=explode('-',$_POST['mes']);

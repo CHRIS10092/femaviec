@@ -20,6 +20,14 @@ function listar_lotes(){
         
     }
     
+function listar_cantidad(){
+  $lote =$('#txtCantidad').val();
+  $.ajax({
+    url:'../componentes/datospollos/listarcantidad.php',
+    type:'POST',
+    data:{galpon:galpon,lote:lote}
+  });
+}
 
     function Ver(){
         galpon=$('#cmb-galpon').val();

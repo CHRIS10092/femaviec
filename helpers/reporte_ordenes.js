@@ -8,6 +8,17 @@ $('#btn-buscar').click(function(){
 	}
 })
 
+function buscar_listado($mes){
+	$.ajax({
+		url:'../componentes/reportes/reporte_ordenes_listado.php',
+		type: 'POST',
+		data: {mes:mes},
+	})
+	.done(function(r) {
+		$('#resultado1').html(r);
+	});
+	
+}
 function mensajes(info){
 	mensaje='<div class="alert alert-danger">'+
 	        '<button type="button" class="close" data-dismiss="alert">'+
@@ -22,15 +33,5 @@ function mensajes(info){
 	$('#alertas').html(mensaje);
 }
 
-function buscar_listado($mes){
-	$.ajax({
-		url:'../componentes/reportes/reporte_ordenes_listado.php',
-		type: 'POST',
-		data: {mes:mes},
-	})
-	.done(function(r) {
-		$('#resultado1').html(r);
-	});
-	
-}
+
 

@@ -9,6 +9,7 @@ $data=$maqv_data->Listar();
         <tr class="info">
             <th>Id</th>
             <th>Mensaje</th>
+            <th>Fecha</th>
                        
         </tr>
 
@@ -18,6 +19,7 @@ $data=$maqv_data->Listar();
         <tr>
             <th><?php echo $row['id_mensaje']?></th>
             <th><?php echo $row['descripcion']?></th>
+            <th><?php echo $row['fecha']?></th>
         </tr>
     <?php } ?>
     </tbody>

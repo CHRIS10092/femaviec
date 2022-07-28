@@ -165,4 +165,19 @@ class datospollos extends conexion
             echo $e->getMessage();
         }
     }
+    public function TraerCantidadPollosxGalpon($galpon){
+        $sql="SELECT * FROM galpones where numero=? ";
+        $stmt=$this->maqv_dbh->prepare($sql);
+        $stmt->bindParam(1,$galpon);
+        
+        $stmt->execute();
+        //$obj = new stdClass();
+        $obj = new stdClass();
+        //$datos=$stmt->fetch_all(PDO::FETCH_OBJ);
+        while($rs = $stmt->fetch()){
+            $obj->idgalpon=$rs['numero'];
+            $obj->cantidad=$rs['n_pollos'];
+        }
+        return $obj;
+    }
 }

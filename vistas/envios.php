@@ -61,6 +61,12 @@ if (!empty($_GET)) {
             $user = "femavico_wp";
             $password = "LhEWo8xLkNtT";
             $db = "femavico_femavi";
+            
+            /*$host="localhost";
+            $user="";
+            $password="";
+            $db="";*/
+            
             $con = mysqli_connect($host, $user, $password, $db);
 
             $sql = "INSERT INTO `registros`(`fecha`, `idgalpon`, `temperatura`, `humedadgalpon`, `bebedero1`,`bebedero2`,`bebedero3`,`bebedero4`, `bomba1`,`bomba2`,`bomba3`,`bomba4`, `ventilador`) VALUES ('$fecha','$idgalpon','$temperatura','$humedadgalpon','$bebedero1','$bebedero2','$bebedero3','$bebedero4','$bomba1','$bomba2','$bomba3','$bomba4','$ventilador')";
@@ -80,11 +86,12 @@ if (!empty($_GET)) {
                 $mensaje1="Saludos Cordiales el galpon ".$idgalpon." con una  temperatura de ".$temperatura."  su ventilador se encuentra en estado ".$ventilador." Mensaje de Femavi Agrícola " ;
                 require_once '../modelos/mensajes.php';
                 $sms = new mensajes();
-               echo $sms->guardar($mensaje1);
+               echo $sms->guardar($mensaje1,$fecha);
 
                 $servicio->enviar_email($correo, $mensaje1);
                 $servicio->enviar_email($correo1, $mensaje1);
                 $servicio->enviar_email($correo2, $mensaje1);
+                $servicio->enviar_email($correo3, $mensaje1);
                 
                                 print "<script>
 alert(\"Agregado exitosamente\"+\"$idgalpon\"+\"$temperatura\"+\"$humedadgalpon\" );window.location='envios.php';

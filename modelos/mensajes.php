@@ -16,10 +16,11 @@ class mensajes extends conexion{
         return $rs;
     }
 
-public function guardar($descripcion){
-$sql="INSERT INTO mensajes(descripcion) values(?)";
+public function guardar($descripcion,$mensajes){
+$sql="INSERT INTO mensajes(descripcion,fecha) values(?,?)";
 $stmt=$this->inv->prepare($sql);
 $stmt->bindParam(1,$descripcion);
+$stmt->bindParam(2,$mensajes);
 $stmt->execute();
 echo 1;
 }

@@ -4,6 +4,7 @@ date_default_timezone_set("America/Guayaquil");
 if (isset($_SESSION['usuarios'])) {
 ?>
 <?php require_once '../contenido/head.php' ?>
+
 <div class="row">
     <div class="col-md-12">
         <div class="box box-danger">
@@ -61,9 +62,10 @@ if (isset($_SESSION['usuarios'])) {
 
                             </select>
                             
-                            <label>Cantidad</label>
-                            <input max="1000000" min="0" class="form-control" type="number" name="cantidad"
+                          <!--  <label>Cantidad</label>
+                            <input max="1000000" min="0"  class="form-control" type="number" name="cantidad"
                                 id="txtCantidad" class="form-control input-sm">
+-->
                             <label>Rango</label>
                             <select name="rango" id="txtRango" class="form-control input-sm">
                                 <option value="Pequeno">Pequeno</option>
@@ -146,12 +148,18 @@ if (isset($_SESSION['usuarios'])) {
                                 <option value="1">1</option>
                                 <option value="23">23</option>
                                 <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="100">100</option>
 
                             </select>
                                <label>Lote</label>
                             <select name="loteu" id="txtLoteu" class="form-control input-sm">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
+                                <option value="3">1</option>
+                                <option value="4">2</option>
                                 
 
                             </select>
