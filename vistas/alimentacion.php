@@ -31,7 +31,10 @@ if (isset($_SESSION['usuarios'])) {
         <a href="../controladores/pdf/alimentacion.php" class="btn btn-danger" target="_blank">
                 <i class="fa fa-print">Pdf</i>
             </a>
+            
     </div>
+    <input type="hidden" name="fechaini" id="txtfechaini" value="<?php echo $fecha; ?>">
+            <input type="hidden" name="fechaini2" id="txtfechaini2" value="<?php echo $fecha; ?>">
     <!-- /.box-header -->
     <div class="box-body">
         <div id="listado"></div>

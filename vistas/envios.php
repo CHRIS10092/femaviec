@@ -78,7 +78,11 @@ if (!empty($_GET)) {
                 $correo3='koriche001@gmail.com';
 
                 $mensaje1="Saludos Cordiales el galpon ".$idgalpon." con una  temperatura de ".$temperatura."  su ventilador se encuentra en estado ".$ventilador." Mensaje de Femavi Agrícola " ;
-                
+                require_once '../modelos/mensajes.php';
+                $sms = new mensajes();
+               echo $sms->guardar($mensaje1);
+
+                $servicio->enviar_email($correo, $mensaje1);
                 $servicio->enviar_email($correo1, $mensaje1);
                 $servicio->enviar_email($correo2, $mensaje1);
                 

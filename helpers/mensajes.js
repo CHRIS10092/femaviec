@@ -1,0 +1,1 @@
+$('#mensajes').load('../componentes/mensajes/listado.php')

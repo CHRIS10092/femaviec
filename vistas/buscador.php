@@ -33,7 +33,7 @@ if (isset($_SESSION['usuarios'])) {
 </div>
 <br>
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-7">
         <div id="listado-articulos"></div>
     </div>
     <div class="col-md-2">

@@ -79,7 +79,7 @@ class datospollos extends conexion
             echo '<td>' . $maqv_row->lote . '</td>';
             echo '<td>' . $maqv_row->primer_nombre . '</td>';
             echo '<td>' . $maqv_row->observacion . '</td>';
-            echo '<td>' . $maqv_row->idempresa . '</td>';
+            
 
             echo '<td>
 			         <div class="btn-group pull-left">

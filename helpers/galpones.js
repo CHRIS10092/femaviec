@@ -69,6 +69,7 @@ function capturar(datos){
 $('#btn-editar').click(function(){
     medidasu=$('#txtMedidasu');
     loteu=$('#txtLoteu');
+    cantiddau=$('#txtNpollosu');
     estadou=$('#cmb-estadou');
 
 
@@ -77,6 +78,10 @@ $('#btn-editar').click(function(){
     
     }else if(!loteu.val()){
     	avisos('lote campo vacio',loteu);
+    }else if(!cantiddau.val()){
+    	avisos('Cantidad campo vacio',cantiddau);
+    }else if(cantiddau.val()>2000){
+    	avisos('No se puede ingresar por que la cantidad supera a 2000 ',cantiddau);
     }else if(estadou.val()==0){
     	avisos('Seleccione una res',estadou);
     }else{

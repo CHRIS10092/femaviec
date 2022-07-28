@@ -1,29 +1,29 @@
 <?php
-require_once '../../modelos/datospollos.php';
-$maqv_data = new datospollos();
-?>
-<table id="datos-pollos" class="table table-striped table-hover">
+require_once '../../modelos/mensajes.php';
+$maqv_data = new mensajes();
+$data=$maqv_data->Listar(); 
+//print_r($data)?>
+
+<table id="tbl-insumop" class="table table-striped table-hover">
     <thead>
         <tr class="info">
-            <th>Código</th>
-            <th>Caso</th>
-            <th>Cantidad</th>
-            <th>Rango</th>
-            <th>Galpón</th>
-            <th>Lote</th>
-            <th>Responsable</th>
-            <th>Observación</th>
-          
-            <th>Acciones</th>
-
+            <th>Id</th>
+            <th>Mensaje</th>
+                       
         </tr>
+
     </thead>
     <tbody>
-        <?php echo $maqv_data->Listar(); ?>
+        <?php foreach($data as $row){ ?>
+        <tr>
+            <th><?php echo $row['id_mensaje']?></th>
+            <th><?php echo $row['descripcion']?></th>
+        </tr>
+    <?php } ?>
     </tbody>
 </table>
 <script type="text/javascript">
-$('#datos-pollos').DataTable({
+$('#tbl-insumop').DataTable({
      language: {
         "decimal": "",
         "emptyTable": "No hay información",

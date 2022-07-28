@@ -194,7 +194,7 @@
 								<b class="arrow"></b>
 							</li>
 							<li class="nav-item">
-								<a href="../vistas/envios.php" class="nav-link">
+								<a href="../vistas/listado_mensajes.php" class="nav-link">
 								<img src="../img/icons-Alerta_Control.png" width="20px" height="20px">
 								
 									Alertas y Control
@@ -250,7 +250,17 @@
 								
 								<img src="../img/icons_Reportes.png" width="20px" height="20px">
 								
-									Producción por Mes y Año
+									Producción por Fechas
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="../vistas/reporte_ordenes.php">
+								
+								<img src="../img/icons_Reportes.png" width="20px" height="20px">
+								
+									Producción por Mes y Anio
 								</a>
 
 								<b class="arrow"></b>
@@ -566,7 +576,17 @@
 								
 								<img src="../img/icons_Reportes.png" width="20px" height="20px">
 								
-									Producción por Mes y Año
+									Producción por Fechas
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="../vistas/reporte_ordenes.php">
+								
+								<img src="../img/icons_Reportes.png" width="20px" height="20px">
+								
+									Producción por Mes y Anio
 								</a>
 
 								<b class="arrow"></b>

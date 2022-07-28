@@ -29,10 +29,15 @@ caption {
    font-style: italic;
 }
 img{
-    width: 420px;
+    width: 220px;
     heigth: 12px;
-    margin-left:323px;
+    margin-left:253px;
 }
+.centro{
+    float:center;
+    
+     /*border: 1px solid #999;*/
+    }
 .derecha{
     float:right;
     
@@ -41,7 +46,7 @@ img{
     .izquierda{
         float:left;
         font-size:12px;
-        margin-top:30px;
+        margin-top:0px;
     margin-bottom: 0px;
     padding-left:40px;
 
@@ -50,17 +55,27 @@ img{
 </style>
 
 <div class="row">
+
 <div class="derecha">
-<img src="../../img/f.png">
-</div>
-<div class="izquierda">
-<p style="font-size:16px;padding-top: 1px;margin-top:-3px;">RUCCI:1725261521001</p>
-<p style="font-size:16px;padding-top: -4px;margin-top:-3px;">Teléfono:0980073905</p>
 <p style="font-size:16px;padding-top: -4px;margin-top:-3px;">Dirección:Bucay</p>
 <p style="font-size:16px;padding-top: -4px;margin-top:-3px;">Página Web:Femavi.com.ec</p>
 <p style="font-size:16px;padding-top: -4px;margin-top:-3px;">Correo:correo@femavi.com.ec</p>
 </div>
+<div class="centro">
+<img src="../../img/f.png">
+
 </div>
+<div class="izquierda">
+<p style="font-size:16px;padding-top: 1px;margin-top:-3px;">RUCCI:1725261521001</p>
+<p style="font-size:16px;padding-top: -4px;margin-top:-3px;">Teléfono:0980073905</p>
+
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <span style="display:block;text-align: right;font-size: 18px;color: #F73E07;margin-bottom:75px; ">Reporte  Por Fechas</span>
 <center><h3>FECHAS <?php echo $_GET['desde'] ?> al <?php echo $_GET['hasta'] ?></h3></center><br>

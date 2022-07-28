@@ -3,7 +3,9 @@ require_once '../../template/assets/dompdf/autoload.inc.php';
 
 use Dompdf\Dompdf;
 
-
+//$ini=$_GET['fechaini'];
+//$ini2=$_GET['fechaini2'];
+//print_r($ini);
 
 function file_get_contents_curl($url)
 {

@@ -93,8 +93,10 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
     <thead>
         <tr>
             <th>Código</th>
-            <th>hora</th>
-            <th>fecha</th>
+            
+            <th>Fecha</th>
+            <th>Hora</th>
+            
             <th>Galpón</th>
             <th>Rango</th>
             <th>Ventilador</th>
@@ -111,8 +113,9 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
             <?php if ($dato['idgalpon']==23): ?>
         <tr>
             <td><?php echo  $dato["id"] ?></td>
-            <td><?php echo  $dato["hora"] ?> </td>
-            <td><?php echo  $dato["fecha"] ?> </td>
+            
+            <td> <?php echo date_format(new \DateTime($dato['fecha']), 'd/m/Y' )?></td>
+            <td> <?php echo date_format(new \DateTime($dato['hora']), 'H:i:s' )?></td>
             <td><?php echo  $dato["idgalpon"] ?> </td>
             <td><?php echo  $dato["rango"] ?> </td>
               
@@ -134,9 +137,10 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
             <?php if ($dato['idgalpon']==1): ?>
         <tr>
             <td><?php echo  $dato["id"] ?></td>
-            <td><?php echo  $dato["hora"] ?> </td>
-            <td><?php echo  $dato["fecha"] ?> </td>
-            <td><?php echo  $dato["idgalpon"] ?> </td>
+            
+            <td> <?php echo date_format(new \DateTime($dato['fecha']), 'd/m/Y' )?></td>
+            <td> <?php echo date_format(new \DateTime($dato['hora']), 'H:i:s' )?></td>
+             <td><?php echo  $dato["idgalpon"] ?> </td>
             <td><?php echo  $dato["rango"] ?> </td>
               
                
@@ -156,9 +160,11 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
             <?php if ($dato['idgalpon']==2): ?>
         <tr>
             <td><?php echo  $dato["id"] ?></td>
-            <td><?php echo  $dato["hora"] ?> </td>
-            <td><?php echo  $dato["fecha"] ?> </td>
-            <td><?php echo  $dato["idgalpon"] ?> </td>
+            
+            <td> <?php echo date_format(new \DateTime($dato['fecha']), 'd/m/Y' )?></td>
+            <td> <?php echo date_format(new \DateTime($dato['hora']), 'H:i:s' )?></td>
+            
+             <td><?php echo  $dato["idgalpon"] ?> </td>
             <td><?php echo  $dato["rango"] ?> </td>
               
                
@@ -177,9 +183,31 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
             <?php if ($dato['idgalpon']==3): ?>
         <tr>
             <td><?php echo  $dato["id"] ?></td>
-            <td><?php echo  $dato["hora"] ?> </td>
-            <td><?php echo  $dato["fecha"] ?> </td>
-            <td><?php echo  $dato["idgalpon"] ?> </td>
+            
+            <td> <?php echo date_format(new \DateTime($dato['fecha']), 'd/m/Y' )?></td>
+            <td> <?php echo date_format(new \DateTime($dato['hora']), 'H:i:s' )?></td>
+          <td><?php echo  $dato["idgalpon"] ?> </td>
+            <td><?php echo  $dato["rango"] ?> </td>
+            
+            <td><?php   if ($dato["ventilador"]==1) { ?>
+                <img src="../img/encendido.gif" width="100" heigth="80">
+                <?php } else {?>
+                    <img src="../img/apagado.jpg" width="100" heigth="80">
+                <?php } ?> </td>
+               
+            
+            
+        </tr>
+        <?php endif ?>
+        <?php endforeach; ?>
+        <?php foreach ($datos as $dato) : ?>
+            <?php if ($dato['idgalpon']==4): ?>
+        <tr>
+            <td><?php echo  $dato["id"] ?></td>
+            
+            <td> <?php echo date_format(new \DateTime($dato['fecha']), 'd/m/Y' )?></td>
+            <td> <?php echo date_format(new \DateTime($dato['hora']), 'H:i:s' )?></td>
+          <td><?php echo  $dato["idgalpon"] ?> </td>
             <td><?php echo  $dato["rango"] ?> </td>
             
             <td><?php   if ($dato["ventilador"]==1) { ?>

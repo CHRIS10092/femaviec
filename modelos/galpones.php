@@ -72,6 +72,21 @@ public function listar_bebederos($idgalpon, $idlote)
         $rs = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $rs;
     }
+    public function listar_pasoagua($idgalpon, $idlote,$fecha)
+    {
+        $maqv_sql = "SELECT  COUNT(`r`.`idgalpon`) as veces,r.*,g.* from registros r, galpones g
+        WHERE r.idgalpon=g.numero
+        AND r.idgalpon=?
+        AND g.lote=?
+        AND fecha =?  ";
+        $stmt = $this->maqv_dbh->prepare($maqv_sql);
+        $stmt->bindParam(1, $idgalpon);
+        $stmt->bindParam(2, $idlote);
+        $stmt->bindParam(3, $fecha);
+        $stmt->execute();
+        $rs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $rs;
+    }
 
 
 

@@ -13,7 +13,9 @@ $datos = $obj->listar_datospollos($_GET["galpon"], $_GET['lote']);
 <?php
 require_once "../../modelos/galpones.php";
 $obj = new  galpones();
-$datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
+date_default_timezone_set("America/Guayaquil");
+$fecha = date("Y-m-d");
+$datos = $obj->listar_pasoagua($_GET["galpon"], $_GET['lote'],$fecha);
 ?>
 <!--<center><button class="form control btn btn-success col-md-2" id="apagar">encender</button>
 <button class="form control  btn btn-danger col-md-2" onclick="Verdatos();" id="encender">Apagar</button></center>
@@ -35,7 +37,8 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>Código</th>
+        <th>Veces Llenado</th>
+            
            
             <th>Fecha</th>
             <th>Galpón</th>
@@ -53,7 +56,7 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
         <?php foreach ($datos as $dato) : ?>
             <?php if ($dato['idgalpon']==23): ?>
         <tr>
-            <td><?php echo  $dato["id"] ?></td>
+            <td><?php echo  $dato["veces"] ?></td>
             
             <td><?php echo  $dato["fecha"] ?> </td>
             <td><?php echo  $dato["idgalpon"] ?> </td>
@@ -83,7 +86,7 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
         <?php foreach ($datos as $dato) : ?>
             <?php if ($dato['idgalpon']==1): ?>
         <tr>
-            <td><?php echo  $dato["id"] ?></td>
+            <td><?php echo  $dato["veces"] ?></td>
             
             <td><?php echo  $dato["fecha"] ?> </td>
             <td><?php echo  $dato["idgalpon"] ?> </td>
@@ -113,7 +116,7 @@ $datos = $obj->listar_bebederos($_GET["galpon"], $_GET['lote']);
         <?php foreach ($datos as $dato) : ?>
             <?php if ($dato['idgalpon']==2): ?>
         <tr>
-            <td><?php echo  $dato["id"] ?></td>
+            <td><?php echo  $dato["veces"] ?></td>
             
             <td><?php echo  $dato["fecha"] ?> </td>
             <td><?php echo  $dato["idgalpon"] ?> </td>

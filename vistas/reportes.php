@@ -23,19 +23,20 @@ if (isset($_SESSION['usuarios'])) {
 </div>
 <div class="box box-danger">
     <div class="box-header with-border">
-        <h4 class="box-title">Reportes</h4>
+        
     </div>
     <!-- /.box-header -->
     <div class="box-body">
         <div class="row">
             <div class="col-md-4">
                 <form id="frm-opcion">
-                    <h4>Usuarios del Sistema </h4>
+                    
                     <label>
                         <div class="iradio_minimal-red">
                             <input type="radio" name="reportes" value="1" class="minimal-red">
-                            <ins class="iCheck-helper"></ins>
+                            <span>Seleccione reporte por Usuarios del Sistema </span>
                         </div>
+                        
                     </label>
                     <hr>
 
