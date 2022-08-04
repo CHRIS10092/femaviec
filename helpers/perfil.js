@@ -4,7 +4,7 @@ $('#btn-usuario').click(function(){
 	if (!usuario) {
 		toastr.error('Escribir la Nueva Cuenta de Usuario');
 	}else if(usuario.length<8){
-		toastr.error('la Nueva Cuenta de Usuario debe contener minimo 8 caracteres');
+		toastr.error('la Nueva Clave de Usuario debe contener minimo 8 caracteres');
 	}else{
 		confirmar_usuario(usuario);
 	}
@@ -12,7 +12,7 @@ $('#btn-usuario').click(function(){
 
 function confirmar_usuario(usuario){
 
-  alertify.confirm('Confirmar','Desea Cambiar la Constraseña de la Cuenta ?',
+  alertify.confirm('Confirmar','se desea cambiar la clave?',
                    function(){
                     cambiar_usuario(usuario);
                    },
@@ -30,7 +30,7 @@ function cambiar_usuario(usuario){
   })
   .done(function(r) {
     if(r==1){
-      toastr.success('El cambio de Cuenta de Usuario ha sido Correcto');
+      toastr.success('La Clave Usuario ha sido Correcto');
       $('#txt-usuario').val('');
     }else{
       alertify.alert(r);

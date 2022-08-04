@@ -9,7 +9,7 @@ class ServicioCorreos extends conexion
 
     private $host_correo     = "mail.femavi.com.ec";
     private $correo_origen   = "correo@femavi.com.ec";
-    private $password_correo = ";+k7x(QWmJAL";
+    private $password_correo = "?gH{=%wVb+rf";
 
     private $db;
 

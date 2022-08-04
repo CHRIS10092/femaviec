@@ -14,7 +14,7 @@ $adchb_data = new reporte();
 			<th>Fecha</th>
 			<th>Precio Unitario</th>
 			<th>Precio Total</th>
-			<th>Ruc Avicola</th>
+			
 		</tr>
 	</thead>
 	<tbody>

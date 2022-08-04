@@ -194,10 +194,19 @@
 								<b class="arrow"></b>
 							</li>
 							<li class="nav-item">
+								<a href="../vistas/envios.php" class="nav-link">
+								<img src="../img/icons-Alerta_Control.png" width="20px" height="20px">
+								
+									Envios y Alertas
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="nav-item">
 								<a href="../vistas/listado_mensajes.php" class="nav-link">
 								<img src="../img/icons-Alerta_Control.png" width="20px" height="20px">
 								
-									Alertas y Control
+									Mensajes
 								</a>
 
 								<b class="arrow"></b>
@@ -265,7 +274,16 @@
 
 								<b class="arrow"></b>
 							</li>
-							
+							<li class="">
+								<a href="../vistas/reportesto.php">
+								
+								<img src="../img/icons_Reportes.png" width="20px" height="20px">
+								
+									Producción Totales
+								</a>
+
+								<b class="arrow"></b>
+							</li>
 						</ul>
 					</li>
 
@@ -447,12 +465,32 @@
 
 						<ul class="submenu">
 							
+						<li class="">
+								<a href="../vistas/reporte_ordenes.php">
+								
+								<img src="../img/icons_Reportes.png" width="20px" height="20px">
+								
+									Producción Mes y Año
+								</a>
+
+								<b class="arrow"></b>
+							</li>
 							<li class="">
 								<a href="../vistas/reporte_compras.php">
 								
 								<img src="../img/icons_Reportes.png" width="20px" height="20px">
 								
-									Producción por Mes y Año
+									Producción por Fechas
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="../vistas/reportesto.php">
+								
+								<img src="../img/icons_Reportes.png" width="20px" height="20px">
+								
+									Producción Totales
 								</a>
 
 								<b class="arrow"></b>

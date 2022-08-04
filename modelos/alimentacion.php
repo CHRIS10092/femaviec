@@ -72,7 +72,7 @@ class alimentacion extends conexion
             echo '<tr>';
             echo '<td>' . $maqv_row->codigo . '</td>';
             echo '<td>' . $maqv_row->galpon . '</td>';
-            echo '<td>' . $maqv_row->fecha . '</td>';
+            echo '<td>' . date_format(new \DateTime($maqv_row->fecha), 'd/m/Y' ) . '</td>';
             echo '<td>' . $maqv_row->comedero . '</td>';
             echo '<td>' . $maqv_row->estado . '</td>';
 

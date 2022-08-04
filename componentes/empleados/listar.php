@@ -8,7 +8,7 @@ $maqv_data=new empleados();
 			<th>Usuario </th>
 			<th>Fecha de Nacimiento</th>
 			<th>Sexo</th>
-			<th>Empresa</th>
+			
 			<th>Acciones</th>
 		</tr>
 	</thead>

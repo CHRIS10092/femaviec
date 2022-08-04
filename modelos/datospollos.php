@@ -106,27 +106,8 @@ class datospollos extends conexion
         $stmt->setFetchMode(PDO::FETCH_OBJ);
         $stmt->execute();
 
-        while ($registro = $stmt->fetch()) {
-
-
-            echo '<tr>';
-            echo '<td>' . $registro->id . ' </td>';
-            echo '<td>' . $registro->hora . ' </td>';
-            echo '<td>' . $registro->fecha . ' </td>';
-            echo '<td>' . $registro->idgalpon . ' </td>';
-            echo '<td>' . $registro->temperatura . ' </td>';
-            echo '<td>' . $registro->humedadgalpon . ' </td>';
-            echo '<td>' . $registro->bebedero1 . ' </td>';
-            echo '<td>' . $registro->bebedero2 . ' </td>';
-            echo '<td>' . $registro->bebedero3 . ' </td>';
-            echo '<td>' . $registro->bebedero4 . ' </td>';
-            echo '<td>' . $registro->bomba1 . ' </td>';
-            echo '<td>' . $registro->bomba2 . ' </td>';
-            echo '<td>' . $registro->bomba3 . ' </td>';
-            echo '<td>' . $registro->bomba4 . ' </td>';
-            echo '<td>' . $registro->ventilador . ' </td>';
-            echo '</tr>';
-        }
+        $rs=$stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $rs;
     }
 
 

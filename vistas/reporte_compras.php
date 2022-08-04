@@ -42,8 +42,8 @@ Ver Reportes de Insumos en la Producción
 							<input class="form-control" type="date" value="<?php echo $fecha; ?>" name="date-range-picker" id="txt-hasta">
 						</div>
 					</div>
-					<div class="col-md-2"><br><br>
-						<button class="btn btn-purple" id="btn-reporte-fecha">
+					<div class="col-md-2"><br>
+						<button class="btn btn-purple " style="margin-top:1px" id="btn-reporte-fecha">
 							Generar
 						</button>
 					</div>

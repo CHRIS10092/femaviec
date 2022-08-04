@@ -14,6 +14,17 @@ class usuarios extends conexion
 	}
 
 
+
+	public function ListarPollosTotales(){
+		$sql="SELECT SUM(n_pollos) as cantidad from galpones";
+		$stmt=$this->maqv_dbh->prepare($sql);
+		$stmt->execute();
+		$obj= new stdClass();
+		while($row = $stmt->fetch()){
+			$obj->cantidad=$row['cantidad'];
+		}
+		return $obj;
+	}	
 	public function Listar()
 	{
 		$maqv_sql = "SELECT u.id AS k ,nombre,apellido,correo,usuario,rol,idrol ,estado,cedula

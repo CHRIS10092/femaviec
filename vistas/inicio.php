@@ -27,7 +27,13 @@ if (isset($_SESSION['usuarios'])) {
 												</span>
 
 												<span class="btn btn-app btn-sm btn-grey no-hover">
-													<span class="line-height-3 bigger-170"> 200 </span>
+                          <?php 
+                          require_once "../modelos/usuarios.php";
+                          $osu=new Usuarios();
+                          $datos=$osu->ListarPollosTotales();
+                          //print_r($datos->cantidad);
+                          ?>
+													<span class="line-height-3 bigger-170"> <?php echo $datos->cantidad;?> </span>
 
 													<br>
 													<span class="line-height-4 smaller-70"> Cantidad Pollos </span>

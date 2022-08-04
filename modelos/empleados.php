@@ -50,7 +50,7 @@ class empleados extends conexion{
 			echo '<td>'.$maqv_row->usuario.'</td>';
 			echo '<td>'.$maqv_row->fecha.'</td>';
 			echo '<td>'.$maqv_row->sexo.'</td>';
-			echo '<td>'.$maqv_row->nombre.'</td>';
+			
 			echo '<td>
 			         <div class="btn-group pull-left">
 		    		    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-espanded="false">   

@@ -62,11 +62,12 @@ if (!empty($_GET)) {
             $password = "LhEWo8xLkNtT";
             $db = "femavico_femavi";
             
-            /*$host="localhost";
-            $user="";
+            /*
+            $host="localhost";
+            $user="root";
             $password="";
-            $db="";*/
-            
+            $db="femaviee";
+            */
             $con = mysqli_connect($host, $user, $password, $db);
 
             $sql = "INSERT INTO `registros`(`fecha`, `idgalpon`, `temperatura`, `humedadgalpon`, `bebedero1`,`bebedero2`,`bebedero3`,`bebedero4`, `bomba1`,`bomba2`,`bomba3`,`bomba4`, `ventilador`) VALUES ('$fecha','$idgalpon','$temperatura','$humedadgalpon','$bebedero1','$bebedero2','$bebedero3','$bebedero4','$bomba1','$bomba2','$bomba3','$bomba4','$ventilador')";

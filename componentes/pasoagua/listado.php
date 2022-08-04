@@ -91,6 +91,36 @@ $datos = $obj->listar_pasoagua($_GET["galpon"], $_GET['lote'],$fecha);
             <td><?php echo  $dato["fecha"] ?> </td>
             <td><?php echo  $dato["idgalpon"] ?> </td>
             <td><?php echo  $dato["rango"] ?> </td>
+                <td><?php   if ($dato["bebedero1"]==1) { ?>
+                    <i class="fa fa-circle" aria-hidden="true">Lleno</i>
+
+                <?php } else if ($dato["bebedero1"]==0) {?>
+                    <i class="fa fa-circle-o" aria-hidden="true">Vacio</i>
+                <?php } else { ?>
+                    <i class="fa fa-dot-circle-o" aria-hidden="true">Con Agua</i>
+                <?php  } ?>
+            </td>
+               
+                <td><?php   if ($dato["bomba1"]==1) { ?>
+                <span> encendido</span>
+                <?php } else {?>
+                    <span>apagado</span>
+                <?php } ?> </td>
+               
+            
+            
+        </tr>
+        <?php endif ?>
+        <?php endforeach; ?>
+         
+        <?php foreach ($datos as $dato) : ?>
+            <?php if ($dato['idgalpon']==2): ?>
+        <tr>
+            <td><?php echo  $dato["veces"] ?></td>
+            
+            <td><?php echo  $dato["fecha"] ?> </td>
+            <td><?php echo  $dato["idgalpon"] ?> </td>
+            <td><?php echo  $dato["rango"] ?> </td>
                 <td><?php   if ($dato["bebedero2"]==1) { ?>
                     <i class="fa fa-circle" aria-hidden="true">Lleno</i>
 
@@ -112,11 +142,10 @@ $datos = $obj->listar_pasoagua($_GET["galpon"], $_GET['lote'],$fecha);
         </tr>
         <?php endif ?>
         <?php endforeach; ?>
-         
         <?php foreach ($datos as $dato) : ?>
-            <?php if ($dato['idgalpon']==2): ?>
+            <?php if ($dato['idgalpon']==3): ?>
         <tr>
-            <td><?php echo  $dato["veces"] ?></td>
+            <td><?php echo  $dato["id"] ?></td>
             
             <td><?php echo  $dato["fecha"] ?> </td>
             <td><?php echo  $dato["idgalpon"] ?> </td>
@@ -143,7 +172,7 @@ $datos = $obj->listar_pasoagua($_GET["galpon"], $_GET['lote'],$fecha);
         <?php endif ?>
         <?php endforeach; ?>
         <?php foreach ($datos as $dato) : ?>
-            <?php if ($dato['idgalpon']==3): ?>
+            <?php if ($dato['idgalpon']==4): ?>
         <tr>
             <td><?php echo  $dato["id"] ?></td>
             

@@ -12,6 +12,8 @@ $('#btn-registrar').click(function(){
     	avisos('Cantidad campo vacio',n_cantidad);
     }else if(n_cantidad.val()>2000){
     	avisos('No se puede ingresar por que la cantidad supera a 2000 ',n_cantidad);
+    }else if(n_cantidad.val()==0){
+    	avisos('No se puede colocar la cantidad 0 ',n_cantidad);
     }else if(!lote.val()){
     	avisos('lote campo vacio',lote);
     }else if(estado.val()==0){
@@ -82,6 +84,8 @@ $('#btn-editar').click(function(){
     	avisos('Cantidad campo vacio',cantiddau);
     }else if(cantiddau.val()>2000){
     	avisos('No se puede ingresar por que la cantidad supera a 2000 ',cantiddau);
+    }else if(cantiddau.val()==0){
+    	avisos('La Cantidad debe ser mayor a 0',cantiddau);
     }else if(estadou.val()==0){
     	avisos('Seleccione una res',estadou);
     }else{

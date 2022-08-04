@@ -88,7 +88,7 @@ img{
 			<th >Fecha</th>
 			<th >Costo</th>
 			<th>Total</th>
-			<th>Ruc</th>
+			
 			
 
 		</tr>

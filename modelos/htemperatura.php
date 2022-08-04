@@ -79,7 +79,7 @@ public function ListarGalpon()
             echo '<td>' . $maqv_row->articulo . '</td>';
             echo '<td>' . $maqv_row->cantidad . '</td>';
             echo '<td>' . $maqv_row->parametro . '</td>';
-            echo '<td>' . $maqv_row->fecha . '</td>';
+            echo '<td>' . date_format(new \DateTime($maqv_row->fecha), 'd/m/Y' ) . '</td>';
             echo '<td>' . $maqv_row->valorUni . '</td>';
             echo '<td>' . $maqv_row->valorTot . '</td>';
             echo '<td>' . $maqv_row->observacion . '</td>';

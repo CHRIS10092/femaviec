@@ -92,7 +92,7 @@ function buscar_listado($mes){
 	 </script>
 	 <table class="table table-bordered" >
 		 <tr class="alert-info">
-			 <th colspan="3"><center>Listado de Artículos por Mes y Anio</center></th>
+			 <th colspan="3"><center>Listado de Artículos por Mes y Año</center></th>
 		 </tr>
 		 <tr>
 			 
@@ -117,7 +117,7 @@ function buscar_listado($mes){
 
 <tr>
 		<td colspan="6">
-			<center><a href="../controladores/pdf/insumoproduccion.php" target="_blank" class="btn btn-danger">Pdf</a></center>
+			<center><a href="../controladores/pdf/insumoProduccion.php" target="_blank" class="btn btn-danger">Pdf</a></center>
 		</td>
 	</tr>
 	<tr>

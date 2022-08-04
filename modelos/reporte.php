@@ -33,7 +33,7 @@ class reporte extends conexion{
 			echo '<td  style="text-align: left;">'.$inv_row->fecha.'</td>';
 			echo '<td style="text-align: left;">'.($inv_row->precioTot).'</td>';
 			echo '<td style="text-align: left;">'.($inv_row->precioUni).'</td>';
-			echo '<td style="text-align: left;">'.($inv_row->ruc).'</td>';
+			
 			echo '</tr>';
 
 		}

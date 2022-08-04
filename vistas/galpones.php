@@ -59,7 +59,7 @@ if (isset($_SESSION['usuarios'])) {
                             <input class="form-control" maxlength="10" placeholder="INGRESE NUMERO Y LETRAS" type="text" name="medidas" id="txtMedidas"
                                 class="form-control input-sm" alt="">
                             <label>Cantidad Pollos </label>
-                            <input class="form-control" maxlength="4" onkeypress="return solo_numeros(event)" placeholder="INGRESE SOLO NUMEROS" type="number" min="1" max="1000000" name="n_pollos"
+                            <input class="form-control" maxlength="4" onkeypress="return solo_numeros(event)" placeholder="INGRESE SOLO NUMEROS" type="text"  name="n_pollos"
                                 id="txtNpollos" class="form-control input-sm" alt="">
                             <label>Lote</label>
                             <input class="form-control" type="number" maxlength="3" onkeypress="return solo_numeros(event)" placeholder="INGRESE SOLO NUMEROS" name="lote" id="txtLote"
@@ -111,13 +111,13 @@ if (isset($_SESSION['usuarios'])) {
                                 class="form-control input-sm">
 
                             <label>Número Galpón</label>
-                            <input class="form-control" type="text" onkeypress="solo_numeros(event);" name="galponu"
+                            <input class="form-control"  maxlength="3" type="text" onkeypress="solo_numeros(event);" name="galponu"
                                 id="txtGalponu" class="form-control input-sm">
                             <label>Medidas</label>
-                            <input class="form-control" placeholder="INGRESE NUMERO Y LETRAS" type="text" name="medidasu" id="txtMedidasu"
+                            <input class="form-control"  maxlength="10" placeholder="INGRESE NUMERO Y LETRAS" type="text" name="medidasu" id="txtMedidasu"
                                 class="form-control input-sm" alt="">
                             <label>Cantidad Pollos </label>
-                            <input class="form-control" onkeypress="return solo_numeros(event)" placeholder="SOLO NUMEROS" type="number" min="1" max="1000000" name="n_pollosu"
+                            <input class="form-control"  maxlength="4" onkeypress="return solo_numeros(event)" placeholder="SOLO NUMEROS" type="text" name="n_pollosu"
                                 id="txtNpollosu" class="form-control input-sm" alt="">
                             <label>Lote</label>
                             <input class="form-control" onkeypress="return solo_numeros(event)" placeholder="SOLO NUMEROS" type="number" name="loteu" id="txtLoteu"

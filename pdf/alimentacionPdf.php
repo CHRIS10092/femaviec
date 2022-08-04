@@ -80,7 +80,7 @@ $obj = new reportes();
 <br>
 <br>
 <center>
-    <h3 style="font-size:18px;color:red">Listado de Alimentación del Sistema Avícola </h3>
+    <h3 style="font-size:18px;color:black">Listado de Alimentación del Sistema Avícola </h3>
 </center>
 <table>
     <thead style="background: #26c6da;color: white;font-weight: bolder;">

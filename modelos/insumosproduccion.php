@@ -73,10 +73,10 @@ class insumosproduccion extends conexion
             echo '<td>' . $maqv_row->codigo . '</td>';
             echo '<td>' . $maqv_row->articulo . '</td>';
             echo '<td>' . $maqv_row->cantidad . '</td>';
-            echo '<td>' . $maqv_row->fecha . '</td>';
+            echo '<td>' . date_format(new \DateTime($maqv_row->fecha), 'd/m/Y' ) . '</td>';
             echo '<td>' . $maqv_row->precioUni . '</td>';
             echo '<td>' . $maqv_row->precioTot . '</td>';
-            echo '<td>' . $maqv_row->nombre . '</td>';
+            
               echo '<td>' . $maqv_row->tipo . '</td>';
           
 
