@@ -42,8 +42,8 @@ try {
 
     //Recipients
     $mail->setFrom('correo@femavi.com.ec', 'M');
-    $mail->addAddress('koriche001@gmail.com', 'Christopher'); // Add a recipient
-    $mail->addAddress('alexsalguero1999.al@gmail.com', 'Christopher'); // Add a recipient
+    $mail->addAddress('koriche001@gmail.com', 'femavi'); // Add a recipient
+    $mail->addAddress('alexsalguero1999.al@gmail.com', 'femavi'); // Add a recipient
     
 
     // Attachments

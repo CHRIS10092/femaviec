@@ -55,39 +55,7 @@ $datos=$maqv_data->ListarRegistros();
     </tr>
     <?php endif ?>
     <?php  } ?>
-    <?php foreach ($datos as $row) {?>
-            <?php if ($row['idgalpon']==2): ?>
-        <tr>
-            <th><?php echo $row['id'] ?></th>
-            <td> <?php echo date_format(new \DateTime($row['hora']), 'H:i:s' )?></td>
-            <th><?php echo date_format(new \DateTime($row['fecha']), 'd/m/Y' )?></td>
-            <th><?php echo $row['idgalpon'] ?></th>
-            <th><?php echo $row['temperatura'] ?></th>
-            <th><?php echo $row['humedadgalpon'] ?></th>
-          
-            </th> <th><?php   if ($row["bebedero2"]==1) { ?>
-                <i style="color:blue" class="fa fa-circle" aria-hidden="true">Lleno</i>
-
-<?php } else if ($row["bebedero1"]==0) {?>
-    <i style="color:red" class="fa fa-circle-o" aria-hidden="true">Vacio</i>
-<?php } else { ?>
-    <i style="color:green" class="fa fa-dot-circle-o" aria-hidden="true">Con Agua</i>
-<?php  } ?>          
-          
-                <th><?php   if ($row["bomba2"]==1) { ?>
-                    <span style="color:green"> encendido</span>
-                <?php } else {?>
-                    <span style="color:red">apagado</span>
-                <?php } ?> </th>
-               
-                <th><?php   if ($row["ventilador"]==1) { ?>
-                <span style="color:green"> encendido</span>
-                <?php } else {?>
-                    <span style="color:red">apagado</span>
-                <?php } ?> </th>
-    </tr>
-    <?php endif ?>
-    <?php  } ?>
+   
     <?php foreach ($datos as $row) {?>
             <?php if ($row['idgalpon']==2): ?>
         <tr>
@@ -114,6 +82,38 @@ $datos=$maqv_data->ListarRegistros();
                     <span style="color:red">apagado</span>
                 <?php } ?> </th>
                
+                <th><?php   if ($row["ventilador"]==1) { ?>
+                <span style="color:green"> encendido</span>
+                <?php } else {?>
+                    <span style="color:red">apagado</span>
+                <?php } ?> </th>
+    </tr>
+    <?php endif ?>
+    <?php  } ?>
+    <?php foreach ($datos as $row) {?>
+            <?php if ($row['idgalpon']==3): ?>
+        <tr>
+            <th><?php echo $row['id'] ?></th>
+            <td> <?php echo date_format(new \DateTime($row['hora']), 'H:i:s' )?></td>
+            <th><?php echo date_format(new \DateTime($row['fecha']), 'd/m/Y' )?></td>
+            <th><?php echo $row['idgalpon'] ?></th>
+            <th><?php echo $row['temperatura'] ?></th>
+            <th><?php echo $row['humedadgalpon'] ?></th>
+            <th><?php   if ($row["bebedero1"]==1) { ?>
+                    <i style="color:blue" class="fa fa-circle" aria-hidden="true">Lleno</i>
+
+                <?php } else if ($row["bebedero1"]==0) {?>
+                    <i style="color:red" class="fa fa-circle-o" aria-hidden="true">Vacio</i>
+                <?php } else { ?>
+                    <i style="color:green" class="fa fa-dot-circle-o" aria-hidden="true">Con Agua</i>
+                <?php  } ?>
+          
+            <th><?php   if ($row["bomba1"]==1) { ?>
+                <span style="color:green"> encendido</span>
+                <?php } else {?>
+                    <span style="color:red">apagado</span>
+                <?php } ?> </th>
+              
                 <th><?php   if ($row["ventilador"]==1) { ?>
                 <span style="color:green"> encendido</span>
                 <?php } else {?>

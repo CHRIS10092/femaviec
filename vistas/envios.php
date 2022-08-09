@@ -62,8 +62,8 @@ if (!empty($_GET)) {
             $password = "LhEWo8xLkNtT";
             $db = "femavico_femavi";
             
-            /*
-            $host="localhost";
+            
+            /*$host="localhost";
             $user="root";
             $password="";
             $db="femaviee";

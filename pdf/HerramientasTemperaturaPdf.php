@@ -99,7 +99,7 @@ $obj = new reportes();
         <td><?php echo $k['codigo'] ?></td>
         <td><?php echo $k['articulo']  ?></td>
         <td><?php echo $k['cantidad']; ?></td>
-        <td><?php echo $k['fecha']; ?></td>
+        <th><?php echo date_format(new \DateTime($k['fecha']), 'd/m/Y' )?></td>
         <td><?php echo $k['valorUni']; ?></td>
         <td><?php echo $k['valorTot']; ?></td>
         <td><?php echo $k['observacion']; ?></td>

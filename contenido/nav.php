@@ -501,7 +501,7 @@
 
 						
 						<?php endif ?>
-						<?php if ($_SESSION['usuarios'][4]==3 && $_SESSION['usuarios'][4]!=1): ?>
+						<?php if ($_SESSION['usuarios'][4]==3  && $_SESSION['usuarios'][4]!=1): ?>
 						
 							<li class="">
 						<a href="#" class="dropdown-toggle">
@@ -636,6 +636,49 @@
 						
 					
 						<?php endif ?>
+						<?php if ($_SESSION['usuarios'][4]>3  && $_SESSION['usuarios'][4]!=1): ?>
+						
+						
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-print blue"></i>
+						<span class="menu-text">Reportes</span>
+
+						<b class="arrow fa fa-angle-down"></b>
+					</a>
+
+					<b class="arrow"></b>
+
+					<ul class="submenu">
+						
+						<li class="">
+							<a href="../vistas/reporte_compras.php">
+							
+							<img src="../img/icons_Reportes.png" width="20px" height="20px">
+							
+								Producción por Fechas
+							</a>
+
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="../vistas/reporte_ordenes.php">
+							
+							<img src="../img/icons_Reportes.png" width="20px" height="20px">
+							
+								Producción por Mes y Anio
+							</a>
+
+							<b class="arrow"></b>
+						</li>
+						
+					</ul>
+				</li>
+
+					
+				
+					<?php endif ?>
+					
 
 					<script type="text/javascript">
 function salir() {

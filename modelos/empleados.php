@@ -48,7 +48,7 @@ class empleados extends conexion{
 			$data=$maqv_row->k.'||'.$maqv_row->primer_nombre.'||'.$maqv_row->segundo_nombre.'||'.$maqv_row->apellido_paterno.'||'.$maqv_row->apellido_materno.'||'.$maqv_row->fecha.'||'.$maqv_row->sexo.'||'.$maqv_row->idEmpresa;
 			echo '<tr>';
 			echo '<td>'.$maqv_row->usuario.'</td>';
-			echo '<td>'.$maqv_row->fecha.'</td>';
+			echo '<td>' . date_format(new \DateTime($maqv_row->fecha), 'd/m/Y' ) . '</td>';
 			echo '<td>'.$maqv_row->sexo.'</td>';
 			
 			echo '<td>

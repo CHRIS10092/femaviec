@@ -95,7 +95,7 @@ $obj = new reportes();
     <tr>
         <td><?php echo $k['codigo'] ?></td>
         <td><?php echo $k['galpon']  ?></td>
-        <td><?php echo $k['fecha']; ?></td>
+        <th><?php echo date_format(new \DateTime($k['fecha']), 'd/m/Y' )?></td>
         <td><?php echo $k['comedero']; ?></td>
     </tr>
 

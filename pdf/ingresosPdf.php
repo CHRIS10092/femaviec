@@ -43,7 +43,7 @@ require_once'../modelos/reportes.php';
 $obj=new reportes();
 ?>
 <?php $row=$obj->ingresos();?>
-<center><h3>Listado de Fechas de Ingresos al  Sistema Ocupacional</h3></center>
+<center><h3>Listado de Fechas de Ingresos al  Sistema </h3></center>
 <table>
 	<thead style="background: #26c6da;color: white;font-weight: bolder;">
 	<tr>

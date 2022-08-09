@@ -94,7 +94,7 @@ $obj = new reportes();
         <td><?php echo $k['primer_nombre'] . ' ' . $k['segundo_nombre']; ?></td>
         <td><?php echo $k['apellido_paterno'] . ' ' . $k['apellido_materno']; ?></td>
         <td><?php echo $k['sexo']; ?></td>
-        <td><?php echo $k['fecha']; ?></td>
+        <th><?php echo date_format(new \DateTime($k['fecha']), 'd/m/Y' )?></td>
     </tr>
 
     <?php endforeach ?>

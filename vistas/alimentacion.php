@@ -149,7 +149,6 @@ if (isset($_SESSION['usuarios'])) {
     </div>
 </div>
 <?php require_once '../contenido/foot.php' ?>
-
     
 
 <script src="../helpers/alimentacion.js"></script>

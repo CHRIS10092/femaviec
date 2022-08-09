@@ -48,7 +48,12 @@ if (isset($_SESSION['usuarios'])) {
 							<div class="row">
 								<div class="col-md-5">
 									<div class="box-body box-profile">
-              <img class="profile-user-img img-responsive img-circle" src="../img/perfil.jpeg" alt="User profile picture">
+              <img class="profile-user-img img-responsive img-circle" src="../img/perfil.jpeg" style="
+    width: 70px;
+    height: 74px;
+    position: inherit;
+    margin-top: 2px;
+" alt="User profile picture">
 
               <h3 class="profile-username text-center"><?php echo $nombre; ?></h3>
 

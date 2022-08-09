@@ -30,7 +30,8 @@ class reporte extends conexion{
 			echo '<td style="text-align:left">'.$inv_row->codigo.'</td>';
 			echo '<td style="text-align:left">'.$inv_row->articulo.'</td>';
 			echo '<td>'.$inv_row->cantidad.'</td>';
-			echo '<td  style="text-align: left;">'.$inv_row->fecha.'</td>';
+			echo '<td>' . date_format(new \DateTime($inv_row->fecha), 'd/m/Y' ) . '</td>';
+			
 			echo '<td style="text-align: left;">'.($inv_row->precioTot).'</td>';
 			echo '<td style="text-align: left;">'.($inv_row->precioUni).'</td>';
 			

@@ -101,7 +101,7 @@ class datospollos extends conexion
     }
     public function ListarRegistros()
     {
-        $sql = "SELECT * FROM registros";
+        $sql = "SELECT * FROM registros GROUP BY id";
         $stmt = $this->maqv_dbh->prepare($sql);
         $stmt->setFetchMode(PDO::FETCH_OBJ);
         $stmt->execute();

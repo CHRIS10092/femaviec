@@ -34,9 +34,9 @@ $row1=$obj->info_ficha($_GET['id']);
  	<strong>Discapacidad: </strong><?php echo $k['discapacidad']; ?>
  	<strong>Tipo de Discapacidad: </strong><?php echo $k['tipo']; ?>
  	<strong>Porcentaje: </strong><?php echo $k['porcentaje']; ?><br>
- 	<h4 style="color: blue;">HISTORIA CLINICA: <?php echo $k['historia']; ?></h4>
+ 	<h4 style="color: blue;">HISTORIA : <?php echo $k['historia']; ?></h4>
  <?php endforeach ?>
- <center><h3 style="color:red">EVALUACIONES</h3></center>
+ <center><h3 style="color:red"></h3></center>
   <?php 
 $row2=$obj->info_evaluacion($_GET['id']);
 $i=1;
